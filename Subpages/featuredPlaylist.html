@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Welcome Featured Playlist Section -->
+        <section id="featured-playlist">
+            <h1>Featured Playlist: Emotions Unleashed</h1>
+            <p>
+                Experience a rollercoaster of emotions with our handpicked selection of heart-touching melodies and soul-stirring tunes. The "Emotions Unleashed" playlist is a musical journey that delves deep into the essence of human feelings, from the euphoria of love to the depths of introspection.
+                Dive into a world of musical storytelling where every note carries a unique sentiment. Whether you're in the mood for soothing melodies to unwind after a long day or looking for the perfect soundtrack to accompany your introspective moments, this playlist has something for every emotion.
+            </p>
+            <p>
+                Indulge in the hauntingly beautiful ballads, find solace in the passionate rhythms, and let the lyrics resonate with your innermost thoughts and experiences. Discover both established and emerging artists who have poured their hearts into their craft, creating songs that are as diverse as the emotions we all feel.
+                Let the world fade away as you immerse yourself in this captivating collection of tracks that will move your spirit and leave you with a lasting impression.
+            </p>
+        </section>
+        <!--Section Featured Playlist-->
+        <section class="featured-playlist-section">
+            <div class="playlist-container">
+                <div class="playlist-list">
+                    <h2>Featured Playlist</h2>
+                    <ul id="song-list">
+                        <li data-src="../Assets/Audio/Haaye Dard - Darshan Raval.mp3">Haaye Dard - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Chadya - Mitraz_192(Ghantalele.com).mp3">Chadya - Mitraz</li>
+                        <li data-src="../Assets/Audio/Saajna Mitraz Official Video.mp3">Saajna - Mitraz</li>
+                        <li data-src="../Assets/Audio/Saathi Har Pal Ka - Mitraz.mp3">Saathi Har Pal Ka - Mitaz</li>
+                        <li data-src="../Assets/Audio/Left Right - Ali Sethi.mp3">Left Right - Maanu, Shae Gill, Ali Sethi and Abdullah Siddiqui</li>
+                        <li data-src="../Assets/Audio/Nasamajh - Aditya Rikhari  NASAMAJH.mp3">Nasamajh - Aditya Rikhari</li>
+                        <li data-src="../Assets/Audio/Missing Me - Jess Loco.mp3">Missing Me - Mickey Singh and Jess Loco</li>
+                        <li data-src="../Assets/Audio/Mahiye Jinna Sohna - Darshan Raval.mp3">Mahiye Jinna Sohna - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/How Many(PaglaSongs).mp3">How Many - Armaan Malik</li>
+                        <li data-src="../Assets/Audio/Jannat - MITRAZ  Official Video.mp3">Jannat - Mitraz</li>
+                        <li data-src="../Assets/Audio/Dreams  - Zaeden.mp3">Dreams - Zaeden</li>
+                        <li data-src="../Assets/Audio/Maan Meri Jaan - King.mp3">Maan Meri Jaan - King</li>
+                        <li data-src="../Assets/Audio/Sahibaa_192(Ghantalele.com).mp3">Sahibaa - Darshan Raval, Antara Mitra</li>
+                        <li data-src="../Assets/Audio/India to Japan  - Arjun Kanungo ft Cyber Rui Shirley Setia Official Audio.mp3">India to Japan - Arjun Kanungo ft Cyber Rui Shirley Setia</li>
+                        <li data-src="../Assets/Audio/Sleepless Nights - Armaan Malik.mp3">Sleepless Nights - Armaan Malik</li>
+                        <li data-src="../Assets/Audio/Lo Aayi Barsaat - Darshan Raval.mp3">Lo Aayi Barsaat - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Ho Nai Sakda - Darshan Raval.mp3">Ho Nai Sakda - Darshan Raval</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Player HTML Code -->
+            <div class="playlist">           
+                <div class="song-details">
+                    <div class="player-controls">
+                        <h3>Now Playing</h3>
+                        <div class="player-info">
+                            <p id="song-info">Song Title - Artist</p>
+                        </div>
+                        <div id="song-image-container">
+                            <img id="song-image" src="" alt="Song Image" width="300px" height="300px">
+                        </div>
+                        <audio id="audio-player">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div class="progress-container">
+                            <div class="progress">
+                                <div id="progress-bar"></div><br> 
+                                <div class="duration">
+                                    <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <br>
+                        <div class="buttons">
+                            <button id="prev-btn"class="fa fa-step-backward"></button>
+                            <button id="play-pause-btn" class="fa fa-play"></button>
+                            <button id="next-btn" class="fa fa-step-forward"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="song-details-right">
+                    <h3>Song Details</h3>
+                    <p id="song-description">Select a song to view details.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--JavaScript coed for the playlist-->
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const songList = document.getElementById("song-list");
+        const audioPlayer = document.getElementById("audio-player");
+        const songInfo = document.getElementById("song-info");
+        const songDescription = document.getElementById("song-description");
+        const progressBar = document.getElementById("progress-bar");
+        const currentTime = document.getElementById("current-time");
+        const totalDuration = document.getElementById("total-duration");
+        const prevButton = document.getElementById("prev-btn");
+        const playPauseButton = document.getElementById("play-pause-btn");
+        const nextButton = document.getElementById("next-btn");
+
+        let currentSongIndex = 0;
+        let isPlaying = false;
+
+        // Define the list of songs and their descriptions
+        const songs = [
+            {
+                title: "Haaye Dard - Darshan Raval",
+                src: "../Assets/Audio/Haaye Dard - Darshan Raval.mp3",
+                description: "The song is sung in a powerful and emotional voice by Darshan Raval. His vocals perfectly capture the pain and heartbreak of the lyrics. The music is also very evocative, with its slow, melancholic melody and simple instrumentation. The song is a slow, soulful ballad that explores the pain of heartbreak. The lyrics are about a person who is struggling to come to terms with the loss of a loved one. They feel lost, lonely, and heartbroken. They are unable to sleep or eat, and they feel like they are going through the motions of life. Haaye Dard is a beautiful and moving song that will resonate with anyone who has ever experienced heartbreak. It is a powerful reminder that even the strongest of people can be broken by love.",
+                imageSrc: "../Assets/Images/HaayeDard.jpg", // the image source here
+            },
+            {
+                title: "Chadya - Mitraz",
+                src: "../Assets/Audio/Chadya - Mitraz_192(Ghantalele.com).mp3",
+                description: "The song is sung in a soft and melodious voice by Mitraz, and the music is a mix of Indian and Western influences. The song's lyrics are about the singer's love for his lover. He describes her as being beautiful, innocent, and pure. He says that he is so in love with her that he can't think of anything else. He also says that he is willing to do anything for her. The song is a celebration of love and commitment. It is a beautiful song that will resonate with anyone who has ever been in love.",
+                imageSrc: "../Assets/Images/chadya.jpg", // the image source here
+            },
+            {
+                title: "Saajna - Mitraz",
+                src: "../Assets/Audio/Saajna Mitraz Official Video.mp3",
+                description: "The song is sung in a soft and melodious voice by Mitraz, and the music is a mix of Indian and Western influences.The song's lyrics are about the singer's love for his love. He describes her as being his everything. He says that he cannot live without her, and that she makes the world a beautiful place. He also says that he will always be there for her, no matter what. The song is a celebration of love and commitment. It is a beautiful song that will resonate with anyone who has ever been in love.",
+                imageSrc: "../Assets/Images/saajna.jpg", // the image source here
+            },
+            {
+                title: "Saathi Har Pal Ka - Mitaz",
+                src: "../Assets/Audio/Saathi Har Pal Ka - Mitraz.mp3",
+                description: "It is a romantic song about a young man who is grateful for the love and support of his girlfriend. The song is sung in a soft and melodious voice by Mitraz, and the music is a mix of Indian and Western influences. The song's lyrics are about the singer's gratitude for his lover. He describes her as being his best friend, his lover, and his confidante. He says that she is always there for him, no matter what. He also says that he is so lucky to have her in his life. The song is a celebration of love and friendship. It is a beautiful song that will resonate with anyone who has ever felt grateful for the love of another person.",
+                imageSrc: "../Assets/Images/saathiHarPalKa.jpg", // the image source here
+            },
+            {
+                title: "Left Right - Maanu, Shae Gill, Ali Sethi and Abdullah Siddiqui",
+                src: "../Assets/Audio/Left Right - Ali Sethi.mp3",
+                description: "It is a bilingual song with lyrics in English and Urdu. The song is a fusion of pop, reggaeton, and afrobeat, with a catchy melody and upbeat tempo. The song is about two people who are attracted to each other, but they are hesitant to take their relationship to the next level. They are both playing left right with each other, trying to figure out what the other person is feeling.  The song's music video is set in a traditional Pakistani haveli, and it features Sethi and Gill in traditional Pakistani clothing. The video is visually stunning, and it perfectly captures the song's vibe.",
+                imageSrc: "../Assets/Images/leftRight.jpg", // the image source here
+            },
+            {
+                title: "Nasamajh - Aditya Rikhari",
+                src: "../Assets/Audio/Nasamajh - Aditya Rikhari  NASAMAJH.mp3",
+                description: "It is a romantic song about a young man who is in love with a woman who is out of his league. The song is sung in a soft and melodious voice by Aditya Rikhari, and the music is a mix of Indian and Western influences. The song's lyrics are about the singer's love for a woman who is beautiful, intelligent, and successful. He says that he is drawn to her like a moth to a flame, but he knows that he is not good enough for her. He is afraid to tell her how he feels, because he is afraid of being rejected. The song is a celebration of love and the power of attraction. It is a beautiful song that will resonate with anyone who has ever been in love with someone who is out of their league.",
+                imageSrc: "../Assets/Images/nasamajh.jpg", // the image source here
+            },
+            {
+                title: "Missing Me - Mickey Singh and Jess Loco",
+                src: "../Assets/Audio/Missing Me - Jess Loco.mp3",
+                description: "The song Missing Me by Mickey Singh is a Punjabi song about a person who is missing their ex-lover. The song is sung in a slow and melancholic voice, and the lyrics are full of longing and regret. The singer describes how they are constantly thinking about their ex-lover, and how they miss everything about them. They miss their smile, their laugh, their touch, and even their voice. They regret ever letting them go, and they wish that they could get back together.  The song is a relatable one for anyone who has ever experienced heartbreak. It is a reminder that even the strongest relationships can come to an end, and that it is okay to feel sad and lost after a breakup.",
+                imageSrc: "../Assets/Images/missingMe.jpg", // the image source here
+            },
+            {
+                title: "Mahiye Jinna Sohna - Darshan Raval",
+                src: "../Assets/Audio/Mahiye Jinna Sohna - Darshan Raval.mp3",
+                description: "The song is a romantic ballad about a young man who is deeply in love with his girlfriend. The song's lyrics are about the singer's love for his girlfriend. He describes her as being the most beautiful and perfect woman in the world. He says that he is so lucky to have her in his life, and that he will never let her go. The song is a celebration of love and happiness. It is a beautiful song that will resonate with anyone who has ever been in love.",
+                imageSrc: "../Assets/Images/MahiyeJinnaSohna.jpg", // the image source here
+            },
+            {
+                title: "How Many - Armaan Malik",
+                src: "../Assets/Audio/How Many(PaglaSongs).mp3",
+                description: "The song How Many by Armaan Malik is a heartbreaking ballad about a couple who are trapped in a toxic relationship. The song is sung in a slow and melancholic voice, and the lyrics are full of regret and despair. The singer describes how the couple used to be so happy and in love, but now they are constantly fighting and hurting each other. They communicate like they are on different planets, and they no longer recognize each other. The singer wonders how many times they can break each other's hearts and fall apart before they finally give up. They know that they need to let go of the relationship, but they are still in love, and they cannot bring themselves to do it. The song is a powerful and moving exploration of the pain of a toxic relationship. It is a reminder that love is not always enough, and that sometimes it is best to walk away, even if it hurts.",
+                imageSrc: "../Assets/Images/HowMany.jpg", // the image source here
+            },
+            {
+                title: "Jannat - Mitraz",
+                src: "../Assets/Audio/Jannat - MITRAZ  Official Video.mp3",
+                description: "It is a romantic song about a young man who is deeply in love with his girlfriend. The song is sung in a soft and melodious voice, and the music is a mix of Indian and Western influences. The song's lyrics are about the singer's love for his girlfriend. He describes her as being his everything. He says that he cannot live without her, and that she makes the world a beautiful place. He also says that he will always be there for her, no matter what. The song is a celebration of love and commitment. It is a beautiful song that will resonate with anyone who has ever been in love.",
+                imageSrc: "../Assets/Images/jannat.jpg", // the image source here
+            },
+            {
+                title: "Dreams - Zaeden",
+                src: "../Assets/Audio/Dreams  - Zaeden.mp3",
+                description: "The song Dreams by Zaeden is a Punjabi song about a young man who is dreaming of a better future with his lover. The song is sung in a soft and melodious voice, and the music is a mix of Indian and Western influences. The song's lyrics are about the singer's dreams for the future. He dreams of a life where he and his lover can be together without any worries. He dreams of a house, a car, and a family. He dreams of a life full of love and happiness. It is a beautiful song that will resonate with anyone who has ever dreamed of a better future.",
+                imageSrc: "../Assets/Images/dreams.jpg", // the image source here
+            },
+            {
+                title: "Maan Meri Jaan - King",
+                src: "../Assets/Audio/Maan Meri Jaan - King.mp3",
+                description: "Maan Meri Jaan is a Hindi song by King, released on November 11, 2022. It is a romantic song about a young man who is deeply in love with his lover. The song is sung in a soft and melodious voice, and the music is a mix of Indian and Western influences. He describes her as being his everything. He says that he cannot live without her, and that she makes the world a beautiful place. He also says that he will always be there for her, no matter what.",
+                imageSrc: "../Assets/Images/maanMeriJaan.jpg", // the image source here
+            },
+            {
+                title: "Sahibaa - Darshan Raval, Antara Mitra",
+                src: "../Assets/Audio/Sahibaa_192(Ghantalele.com).mp3",
+                description: "The song Sahibaa by Darshan Raval and Antara Mitra is a Punjabi song about a young man who is in love with a woman who is out of his league. The song is sung in a soulful voice, and the lyrics are full of longing and desire. The song's lyrics are about the singer's love for his beloved. He describes her as being the most beautiful and perfect woman he has ever seen. He says that he is madly in love with her.",
+                imageSrc: "../Assets/Images/sahibaa.jpg", // the image source here
+            },
+            {
+                title: "India to Japan  - Arjun Kanungo ft Cyber Rui Shirley Setia",
+                src: "../Assets/Audio/India to Japan  - Arjun Kanungo ft Cyber Rui Shirley Setia Official Audio.mp3",
+                description: "The song is about a young man who is leaving his girlfriend for Japan to pursue his dreams. He is tired of her being angry at him all the time, and he wants to focus on himself. He knows that she will be upset with him for leaving, but he doesn't care. He is determined to make a name for himself in Tokyo. The song is a catchy and upbeat pop song with a mix of English, Japanese and Hindi lyrics. The music is upbeat and fun, and the lyrics are empowering. The song is sure to get stuck in your head, and it will make you want to dance.",
+                imageSrc: "../Assets/Images/industry2.jpg", // the image source here
+            },
+            {
+                title: "Sleepless Nights - Armaan Malik",
+                src: "../Assets/Audio/Sleepless Nights - Armaan Malik.mp3",
+                description: "Sleepless Nights by Armaan Malik is a romantic song about a couple who are madly in love. The singer is so in love with his partner that he would rather spend sleepless nights with them than do anything with anyone else. He feels like he can be himself around them, and he loves the way they make him feel. The song is a beautiful and heartwarming celebration of love. It is a song that will resonate with anyone who has ever been deeply in love. The singer is saying that his partner knows him better than anyone else in the world. They make him feel loved and accepted for who he is. He feels like he can be himself around them, and he loves the way they make him feel.",
+                imageSrc: "../Assets/Images/Sleepless-Nights.jpg", // the image source here
+            },
+            {
+                title: "Lo Aayi Barsaat - Darshan Raval",
+                src: "../Assets/Audio/Lo Aayi Barsaat - Darshan Raval.mp3",
+                description: "Lo Aayi Barsaat by Darshan Raval is a sad song about a man who is heartbroken after his lover has left him. The song is set during the monsoon season, which is a time of great change and upheaval in India. The singer compares the monsoon to his own heartbreak, saying that they are both destructive forces that can leave people feeling lost and alone.  The song begins with the singer asking anyone who finds someone who loves them the way he loved his lover to let him know. He knows that he will never find someone who loves him as much as she did, and he is resigned to a life of loneliness. The singer says that he is trying to move on with his life, but he is finding it difficult. He still thinks about her all the time, and he can't help but feel sad when he sees the rain. The singer says that the rain can wash away everything in its path, including love. He compares his heartbreak to the monsoon, saying that it has left him feeling lost and alone. He knows that he will never be the same person after she left him, and he is not sure how he will ever move on.",
+                imageSrc: "../Assets/Images/LoAayiBarsaat.jpg", // the image source here
+            },
+            {
+                title: "Ho Nai Sakda - Darshan Raval",
+                src: "../Assets/Audio/Ho Nai Sakda - Darshan Raval.mp3",
+                description: "Ho Nahi Sakda by Darshan Raval is a romantic song about a man who is deeply in love with a woman. He knows that he will never be able to love anyone else the way he loves her.  The song begins with the singer expressing his love for the woman. He says that he is completely and utterly in love with her, and he knows that he will never be able to love anyone else the way he loves her. In the second verse, the singer describes how the woman makes him feel. He says that she is the most beautiful woman he has ever seen, and she makes him feel like he is the only man in the world. In the chorus, the singer repeats that he will never be able to love anyone else the way he loves her. He says that his love for her is so strong that it can never be broken.  In the bridge, the singer imagines what it would be like if the woman loved him back. He says that he would be the happiest man in the world if she would just give him a chance. In the final verse, the singer expresses his hope that the woman will one day love him back. He says that he will never give up on her, and he will always love her.",
+                imageSrc: "../Assets/Images/HoNahiSakda.jpg", // the image source here
+            },
+        ];
+
+        // Function to update the song details when a song is clicked
+        function selectSong(songIndex) {
+            currentSongIndex = songIndex;
+            loadSong(currentSongIndex);
+            loadSongImage(currentSongIndex); // Load the song image
+            playSong();
+        }
+
+        // Event listeners for song list items
+        const songListItems = document.querySelectorAll("#song-list li");
+        songListItems.forEach((songListItem, index) => {
+            songListItem.addEventListener("click", () => {
+                selectSong(index);
+            });
+        });
+
+        // Inside the event listener for the previous button
+        prevButton.addEventListener("click", () => {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            loadSong(currentSongIndex);
+            loadSongImage(currentSongIndex); // Call the function to update the image
+            playSong();
+        });  
+
+        // Function to update the audio player with the selected song
+        function loadSong(songIndex) {
+            const song = songs[songIndex];
+            audioPlayer.src = song.src;
+            songInfo.textContent = `${song.title}`;
+            songDescription.textContent = `${song.description}`;
+        }
+
+        // Function to play the selected song
+        function playSong() {
+            audioPlayer.play();
+            isPlaying = true;
+            playPauseButton.classList.remove("fa-play");
+            playPauseButton.classList.add("fa-pause");
+        }
+
+        // Function to pause the currently playing song
+        function pauseSong() {
+            audioPlayer.pause();
+            isPlaying = false;
+            playPauseButton.classList.remove("fa-pause");
+            playPauseButton.classList.add("fa-play");
+        }
+
+        // Event listener for the play/pause button
+        playPauseButton.addEventListener("click", () => {
+            if (isPlaying) {
+                pauseSong();
+            } else {
+                playSong();
+            }
+        });
+
+        // Inside the event listener for the next button
+        nextButton.addEventListener("click", () => {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            loadSong(currentSongIndex);
+            loadSongImage(currentSongIndex); // Call the function to update the image
+            playSong();
+        });
+
+        // Event listener for the audio player's time update
+        audioPlayer.addEventListener("timeupdate", () => {
+            const { currentTime: current, duration } = audioPlayer;
+            const progressPercentage = (current / duration) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+            currentTime.textContent = formatTime(current);
+            totalDuration.textContent = formatTime(duration);
+        });
+
+        // Function to format time in minutes and seconds
+        function formatTime(time) {
+            const minutes = Math.floor(time / 60);
+            const seconds = Math.floor(time % 60);
+            return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        }
+        // Function to load the song image
+        function loadSongImage(songIndex) {
+            const song = songs[songIndex];
+            const songImage = document.getElementById("song-image");
+            songImage.src = song.imageSrc; // Add the image source to the "src" attribute
+            songImage.alt = song.title; // Set the alt text to the song title
+        }
+
+        // Initialize with the first song
+        loadSong(currentSongIndex);
+        loadSongImage(currentSongIndex); // Load the image for the initial song
+
+        // Autoplay the next song when the current one ends
+        audioPlayer.addEventListener("ended", () => {
+            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            loadSong(currentSongIndex);
+            loadSongImage(currentSongIndex); // Load the image for the next song
+            playSong();
+        });
+    });
+    </script>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

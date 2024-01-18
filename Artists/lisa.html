@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+ h1{
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Center the content within the container */
+        /* Add more styles for your content here */
+        .artist-name h2 {
+        /* Explore section title styling */
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        }
+
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+            
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4 {
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Style the paragraphs */
+        p {
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>Lisa Mishra</h2>
+                <h3>Genre: Western Pop</h3>
+            </div>
+            <img src="../Assets/Images/Lisa_Bio.jpg" alt="" class="bio-image" width="300px" height="300px">
+            <div class="artist-bio">
+                <p><strong>Full Name: Lisa Mishra</strong> </p>
+                <p><strong>Date of Birth: 4 February 1989</strong> </p>
+                <p><strong>Place of Birth: 	Brahmapur, Odisha, India</strong> </p>
+                <p><strong>Occupation: Singer, Songwriter and Guitartist</strong> </p>
+            </div>
+            <div class="artist-into">
+                <h4>Introduction</h4>
+                <p>
+                    Lisa Mishra is a talented American-Indian singer, composer, and songwriter who has made a notable mark in the music industry with her 
+                    soulful voice and captivating performances. She is known for her ability to effortlessly blend different musical styles, creating a 
+                    unique and refreshing sound that resonates with a diverse audience.
+                </p>
+            </div>
+            <div class="artist-life">
+                <h4>Early Life and Education</h4>
+                <p>
+                    Lisa Mishra was born on February 4, 1989, in Chicago, Illinois, USA. She grew up in a family that appreciated and encouraged her interest 
+                    in music. Lisa pursued her education at Northwestern University, where she completed her bachelor's degree in Communications and a master's 
+                    degree in Integrated Marketing Communications. During her time at university, she continued to nurture her passion for music, often performing 
+                    at local events and gatherings.
+                </p>
+            </div>
+            <div class="artist-fame">
+                <h4>Rise to Fame</h4>
+                <p>
+                    Lisa Mishra's rise to fame can be attributed to her viral cover of the Bollywood hit song "Tareefan" from the film "Veere Di Wedding." 
+                    In 2018, she uploaded her rendition on YouTube, which quickly gained immense popularity, capturing the attention of audiences both in 
+                    India and internationally. This breakthrough cover showcased her exceptional vocal abilities and unique musical style, propelling her into 
+                    the spotlight and marking the beginning of her promising career as a singer and performer.
+                </p>
+            </div>
+            <div class="artist-career">
+                <h4>Musical Career</h4>
+                <p>
+                    Lisa Mishra's musical journey gained significant momentum when she uploaded a cover of the hit song "Tareefan" from the Bollywood film 
+                    "Veere Di Wedding" on YouTube in 2018. Her rendition went viral and garnered attention from both Indian and international audiences. 
+                    This marked a turning point in her career as a singer.
+                    <br><br>
+                    She continued to create covers and original music, often fusing elements of Western and Indian musical styles. Lisa's ability to sing in 
+                    multiple languages, including Hindi and English, further expanded her reach and appeal to a wide audience.
+                </p>
+            </div>
+            <div class="artist-achievements">
+                <h4>Achievements</h4>
+                <p>
+                    Lisa Mishra's talent and dedication to music have earned her recognition in the industry. Her cover songs and original tracks have received 
+                    millions of views on YouTube and streaming platforms. She has also performed at various music festivals, concerts, and events, further 
+                    solidifying her position as a rising star in the music scene.
+                </p>
+            </div>
+        </section> 
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    
+    <style>
+    
+    /* Music player container styles */
+    .music-players-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    /* Responsive design for music players */
+    .music-player {
+        width: calc(33.33% - 20px); /* Adjust spacing between music players */
+        margin: 20px 0;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s ease;
+    }
+    .music-player:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Heading styles */
+    h1 {
+        font-family: 'Bungee';
+        letter-spacing: 5px;
+        color: #FF3179;
+        margin: 0;
+    }
+    h2 {
+        font-family: 'Orbitron';
+        color: black;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+
+    /* Song list styles */
+    .album ul {
+        height: 200px;
+        padding: 5px;
+        overflow-y: auto;
+    }
+    .song-list li {
+        cursor: pointer;
+        margin: 5px 0;
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .song-list li:hover {
+        background-color: #FF3179;
+        color: white;
+    }
+
+    /* Player control left side of webpage */
+    .player-controls {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #FF3179;
+        width: 600px; 
+    }
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 768px) {
+            .player-controls {
+                padding: 20px;
+                max-width: 400px;/* Responsive max-width */
+            }
+        }
+    
+
+    /* Player control section title styling */
+    .player-controls h3 {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+        font-family: Orbitron;
+        font-size: 24px;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    /* Player control section paragraph styling */
+    .player-controls p {  
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+        font-family: Roboto;
+        font-size: 18px;
+    }
+
+/* Player info, progress bar, and buttons container */
+.player-info,
+.progress-container,
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 768px) {
+            h1,
+            .player-info,
+            .progress-container
+            {
+                flex-direction: column; /* Adjusted flex-direction for responsiveness */
+            }
+        }
+
+    .player-info p {
+        margin: 0;
+        padding-bottom: 20px;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+    .audio {
+        width: 100%;
+        margin: 8px 0;
+    }
+    .progress-container {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .progress {
+        width: 100%;
+        background-color: #ddd;
+        height: 10px;
+        position: relative;
+    }
+
+    #progress-bar {
+        background-color: black;
+        height: 100%;
+        width: 0;
+        position: absolute;
+    }
+
+    .buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        background-color: white;
+        color: #FF3179;
+        border-radius: 5px;
+    }
+
+    .duration {
+        display: flex;
+        width: 100%;
+        font-size: 14px;
+        margin-top: 5px;
+        color: white;
+    }
+
+    /* Adjustments for the search icon in the navigation bar */
+    .fa-search {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .fa-search:hover {
+        color: #FF3179;
+    }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <div class="player-controls">
+            <h3>Now Playing</h3>
+            <div class="">
+                <p id="song-info">Song Title - Artist</p>
+            </div>
+            <audio id="audio-player">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="progress-container">
+                <div class="progress">
+                    <div id="progress-bar"></div><br> 
+                    <div class="duration">
+                        <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+                    </div>
+                </div>   
+            </div>
+            <br>
+            <div class="buttons">
+                <button id="prev-btn"class="fa fa-step-backward"></button>
+                <button id="play-pause-btn" class="fa fa-play"></button>
+                <button id="next-btn" class="fa fa-step-forward"></button>
+            </div>
+        </div>
+
+    <section class="music-players-container">
+
+        <div class="music-player" >
+            <h1>Discover New Music</h1>
+            <div class="album">
+                <h2>IndieBeat Album 1</h2>
+                <ul class="song-list">
+                    <li data-src="../Assets/Audio/Saajna Mitraz Official Video.mp3">Saajna - Mitraz</li>
+                    <li data-src="../Assets/Audio/Ho Nai Sakda - Darshan Raval.mp3">Ho Nahi Sakda - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Zehen - Zehen 128 Kbps.mp3">Zehen - Mitraz</li>
+                    <li data-src="../Assets/Audio/Sach Bata Mujhe - Arjun Kanungo.mp3">Sach Bata Mujhe - Arjun Kanungo, Shirley Setia</li>
+                    <li data-src="../Assets/Audio/Saahiba - Darshan Raval.mp3">Saahiba - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Mahiye Jinna Sohna - Darshan Raval.mp3">Mahiye Jinna Sohna - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Nadiyon Sa - Mitraz.mp3">Nadiyon Sa - Mitraz</li>
+                    <li data-src="../Assets/Audio/Jannat - MITRAZ  Official Video.mp3">Jannat - Mitraz</li> 
+                    <li data-src="../Assets/Audio/Piya Re - Darshan Raval.mp3">Piya Re - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Sleepless Nights - Armaan Malik.mp3">Sleepless Nights - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/Mannat - Darshan Raval.mp3">Mannat - Darshan Raval, Prakriti Kakar</li> 
+                    <li data-src="../Assets/Audio/Chadya - Mitraz_192(Ghantalele.com).mp3">Chadya - Mitraz</li> 
+                    <li data-src="../Assets/Audio/Tu Hain - Arjun Kanungo, Zaeden.mp3">Tu Hain - Arjun Kanungo, Zaeden</li>
+                    <li data-src="../Assets/Audio/Alfaazo  MITRAZ  New Hindi Music.mp3">Alfaazo - Mitraz</li> 
+                    <li data-src="../Assets/Audio/Sun Maahi - Armaan Malik.mp3">Sun Maahi - Armaan Malik</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="music-player" >
+            <h1>IndieBeat Tunes</h1>
+            <div class="album">
+                <h2>IndieBeat Album 2</h2>
+                <ul class="song-list">
+                    <li data-src="../Assets/Audio/Daffa Ho - Akull.mp3">Daffa Ho - Akull</li>
+                    <li data-src="../Assets/Audio/Lo Aayi Barsaat - Darshan Raval.mp3">Lo Aayi Barsaat - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/CROWN - King.mp3">Crown - King</li>
+                    <li data-src="../Assets/Audio/Never Let You Go - Zaeden x Nina & Malika(Official Music Video).mp3">Never Let you go - Zaeden</li>
+                    <li data-src="../Assets/Audio/Teri Ho Na Saki - King.mp3">Teri Ho Na Saki - King</li> 
+                    <li data-src="../Assets/Audio/Haaye Dard - Darshan Raval.mp3">Haaye Dard - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Barsaat - Armaan Malik.mp3">Barsaat - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/1000 pieces - Genesis 11 128 Kbps.mp3">1000 Pieces - Zaeden</li>
+                    <li data-src="../Assets/Audio/Laapata - King.mp3">Laapata - King</li> 
+                    <li data-src="../Assets/Audio/How Many(PaglaSongs).mp3">How Many - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/Yaad Na Aaye - Akull.mp3">Yaad Na Aaye - Akull</li>
+                    <li data-src="../Assets/Audio/Kaun Tujhe Finding the Light -  Arjun.mp3">Kaun Tujhe (Finding the Light) - Arjun, Jonita Gandhi</li> 
+                    <li data-src="../Assets/Audio/Jaane De - Darshan Raval.mp3">Jaane De -Darshan Raval</li> 
+                    <li data-src="../Assets/Audio/Maan Meri Jaan - King.mp3">Maan Meri Jaan -King</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <h1>Indie Vibes</h1>
+            <div class="album">
+                <h2>IndieBeat Album 3</h2>
+                <ul class="song-list">
+                    <li data-src="../Assets/Audio/ButtaBomma.mp3">ButtaBomma - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/Zara Thehro - Armaan Malik.mp3">Zara Thero - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/Shab Tum Ho - Darshan Raval_128-(PagalWorld.Ink).mp3">Shub Tum Ho - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Bhula Diya - Darshan Raval (SongsMp3.Com).mp3">Bhula Diya - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Main Woh Chaand (Teraa Surroor) (SongsMp3.Com).mp3">Main Woh Chaand - Darshan Raval</li>
+                    <li data-src="../Assets/Audio/Laal Mehendiyaan - Akull.mp3">Laal Mehendiyaan - Akull</li>
+                    <li data-src="../Assets/Audio/Khel - Yashraj Manïn (Official Music Video).mp3">Khel - Yashraj</li>
+                    <li data-src="../Assets/Audio/Dhundhala - Yashraj, Talwiinder, Dropped Out.mp3">Dhundhala - yashraj</li>
+                    <li data-src="../Assets/Audio/Ilzaam - Arjun Kanungo.mp3">Ilzaam - Arjun Kanungo, King</li>
+                    <li data-src="../Assets/Audio/You - Armaan Malik.mp3">You - Armaan Malik</li>
+                    <li data-src="../Assets/Audio/Baatein - Zehen 128 Kbps.mp3">Baatein - Mitraz</li>
+                    <li data-src="../Assets/Audio/MITRAZ - Mehroom (Official Video).mp3">Mehroom - Mitraz</li>
+                    <li data-src="../Assets/Audio/Who Are You -Mitraz Official Music Video.mp3">Who Are You - Mitraz</li>
+                    <li data-src="../Assets/Audio/Worthy - Mitraz.mp3">Worthy - Mitraz</li>
+                    <li data-src="../Assets/Audio/Tabaahi - Armaan Malik.mp3">Tabaahi - Armaan Malik, OAFF</li>
+                    <li data-src="../Assets/Audio/HIIR - Armaan Malik.mp3">Hiir - Armaan Malik, Yashraj</li>
+                    <li data-src="../Assets/Audio/Danger - Arjun Kanungo.mp3">Danger - Arjun Kanungo</li>
+                    <li data-src="../Assets/Audio/Dreams  - Zaeden.mp3">Dreams - Zaeden</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    </main>
+    <!--------------------------------------------------------------->
+<script>        
+  // Initialize the audio element
+const audio = new Audio();
+
+// Initialize variables
+let currentSongIndex = 0;
+let isPlaying = false;
+
+// Get DOM elements
+const songList = document.querySelectorAll('.song-list li');
+const playPauseButton = document.getElementById('play-pause-btn');
+const prevButton = document.getElementById('prev-btn');
+const nextButton = document.getElementById('next-btn');
+const currentProgress = document.getElementById('progress-bar');
+
+// Function to update the progress bar
+function updateProgressBar() {
+    const currentTime = audio.currentTime;
+    const duration = audio.duration;
+    const progressPercentage = (currentTime / duration) * 100;
+    currentProgress.style.width = `${progressPercentage}%`;
+
+    // Update the current time and total duration
+    document.getElementById('current-time').textContent = formatTime(currentTime);
+    document.getElementById('total-duration').textContent = formatTime(duration);
+
+    if (currentTime >= duration) {
+        // The song has ended, auto-play the next song
+        playNextSong();
+    }
+}
+
+// Function to format time in minutes and seconds
+function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+
+// Function to play a song by index
+function playSong(index) {
+    if (index >= 0 && index < songList.length) {
+        const song = songList[index];
+        const songTitle = song.textContent;
+        const artist = song.getAttribute('data-artist');
+        audio.src = song.getAttribute('data-src');
+        audio.play();
+        currentSongIndex = index;
+        isPlaying = true;
+        playPauseButton.className = 'fa fa-pause';
+        updateSongInfo(songTitle, artist);
+    }
+}
+
+// Function to update song information
+function updateSongInfo(songTitle, artist) {
+    const songInfo = document.getElementById('song-info');
+    
+    if (songTitle && artist) {
+        songInfo.textContent = `${songTitle} - ${artist}`;
+    } else if (songTitle) {
+        songInfo.textContent = `${songTitle}`;
+    } else if (artist) {
+        songInfo.textContent = `${artist}`;
+    } else {
+        songInfo.textContent = ""; // Clear the song info when no song is playing or when information is not available
+    }
+}
+// Event listener for song clicks
+songList.forEach((song, index) => {
+    song.addEventListener('click', () => {
+        if (currentSongIndex === index && isPlaying) {
+            audio.pause();
+            isPlaying = false;
+            playPauseButton.className = 'fa fa-play';
+        } else {
+            playSong(index);
+        }
+    });
+});
+
+// Event listener for play/pause button
+playPauseButton.addEventListener('click', () => {
+    if (isPlaying) {
+        audio.pause();
+        isPlaying = false;
+        playPauseButton.className = 'fa fa-play';
+    } else {
+        audio.play();
+        isPlaying = true;
+        playPauseButton.className = 'fa fa-pause';
+    }
+});
+
+// Event listener for previous button
+prevButton.addEventListener('click', () => {
+    const newIndex = currentSongIndex - 1;
+    if (newIndex >= 0) {
+        playSong(newIndex);
+    }
+});
+
+// Event listener for next button
+nextButton.addEventListener('click', () => {
+    playNextSong();
+});
+
+// Function to play the next song
+function playNextSong() {
+    const newIndex = currentSongIndex + 1;
+    if (newIndex < songList.length) {
+        playSong(newIndex);
+    }
+}
+
+// Event listener for updating progress bar
+audio.addEventListener('timeupdate', updateProgressBar);
+
+
+</script>
+
+
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

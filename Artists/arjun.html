@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        h1{
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Center the content within the container */
+        /* Add more styles for your content here */
+        .artist-name h2 {
+        /* Explore section title styling */
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        }
+
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+            
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4 {
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Style the paragraphs */
+        p {
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>Artist Name</h2>
+                <h3>Genre: Pop, Rock, Dance</h3>
+            </div>
+            <img src="../Assets/Images/Arjun_Bio.jpg" alt="" class="bio-image" width="300px" height="300px">
+            <div class="artist-bio">
+                <p><strong>Full Name: Arjun Kanungo</strong> </p>
+                <p><strong>Date of Birth: 6 September 1990</strong> </p>
+                <p><strong>Place of Birth: Mumbai, Maharashtra, India</strong> </p>
+                <p><strong>Occupation: Singer, actor, composer, entrepreneur</strong> </p>
+            </div>
+            <div class="artist-into">
+                <h4>Introduction</h4>
+                <p>
+                    Arjun Kanungo is a versatile Indian artist known for his multi-talented career in music, acting, and entrepreneurship. 
+                    He has made a significant mark in the Indian entertainment industry with his unique voice, musical compositions, and on-screen 
+                    presence. Arjun is renowned for his pop and indie music, as well as his contributions to Bollywood.
+                </p>
+            </div>
+            <div class="artist-life">
+                <h4>Early Life and Education</h4>
+                <p>
+                    He was born on September 6, 1990, in Mumbai, India, and spent most of his life in Mumbai. He was interested in music from a young age 
+                    and started singing and playing the guitar at the age of 18 and began performing at local studios and events.He completed schooling at 
+                    The British School in New Delhi, India, and graduated in Management Studies at the University of Mumbai.
+                </p>
+            </div>
+            <div class="artist-fame">
+                <h4>Rise to Fame</h4>
+                <p>
+                    Arjun Kanungo's journey to fame began when he released his debut single, "Baaki Baatein Peene Baad," featuring rapper Badshah, in 2015. 
+                    The song became a massive hit and propelled him into the limelight, earning him recognition in the Indian music industry.
+                </p>
+            </div>
+            <div class="artist-career">
+                <h4>Musical Career</h4>
+                <p>
+                    At the age of 18, Kanungo opened a recording studio in Mumbai called Promethean Audio. Soon after, he diversified into acoustic 
+                    design and construction with his second venture, Promethean Design. He gained popularity after his stint as a playback singer for 
+                    movies including Go Goa Gone and Pizza. As a vocalist, He is also active as a composer for TV ads and background musical scores and 
+                    has worked with brands such as Nike Cricket and ESPN.
+                    <br><br>
+                    Kanungo's first commercial success came with "Khoon Choos Le" in the 2013 film Go Goa Gone, starring Saif Ali Khan. Since then he has 
+                    churned out 3 hit singles in 2 years- Baaki Baatein Peene Baad ft. Badshah, Fursat, and Ek Dafaa (Chinnama). His track Ek Daffa (Chinnama) 
+                    was remixed by DJ Akhil Talreja. Arjun has lent his voice to several Bollywood films. His Tamil Debut came with 'Sirrikadhey', composed 
+                    by Anirudh Ravichander, from the film 'Remo'.
+                    <br><br>
+                    His debut single Baaki Baatein Peene Baad was released on 25 September 2015 by Sony Music India. The song was written by Mayur Puri and was 
+                    composed, written, recorded and produced in Sweden The song features the rapper Badshah.[12] Baaki Baatein Peene Baad went viral on YouTube 
+                    upon its release and subsequently climbed the TV and radio charts.
+                    <br><br>
+                    His second single, Fursat, was eventually released on 18 March by Sony Music India. He made his UK debut with a live stage performance at the 
+                    Asian Network 2017, in March. He made his debut in Bollywood alongside Salman Khan, he acted as Mansoor, a drug dealer in Radhe (2021 film)
+                </p>
+            </div>
+            <div class="artist-achievements">
+                <h4>Achievements</h4>
+                <p>
+                    Arjun Kanungo's talent and versatility have earned him a dedicated fan base and critical acclaim. He has received several awards and nominations 
+                    for his music and has been recognized as a promising talent in the Indian music scene.
+                </p>
+            </div>
+            
+        </section> 
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+/*Body Styling*/
+body{
+    margin: 0;
+    background-color: black;
+}
+/*--------------------------------------*/
+/*Navigation Bar Styling*/
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position: sticky;
+    z-index: 100;
+    padding: 10px; 
+    top:0;
+}
+.navbar-container ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navbar-container li {
+    margin: 0 12px;
+}
+.navbar-container a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+#home{
+    color:#B14EB2;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#gallery{
+    color: #FF3179;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#information{
+    color: #F67C00;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: normal;
+}
+#contact{
+    color:#C3FD02;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#home:hover{
+    color:#B14EB2;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#gallery:hover{
+    color: #FF3179;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#information:hover{
+    color: #F67C00;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contact:hover{
+    color:#C3FD02;
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#login{
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.search-icon {
+    font-size: 20px;
+    color: white;
+}
+/* Responsive styles for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-container ul {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .navbar-container li {
+        margin: 5px 0;
+    }
+
+    /* Adjust font size for smaller screens */
+    .navbar-container a {
+        font-size: 14px;
+    }
+
+    /* Increase font size on hover for smaller screens */
+    .navbar-container a:hover {
+        font-size: 16px;
+    }
+
+    /* Center-align search icon */
+    .search-icon {
+        text-align: center;
+    }
+}
+/*--------------------------------------*/
+
+/*Header Styling*/
+.image-logo{
+    background-size: cover; /* Cover the entire div with the image */
+    background-position: center; /* Center the image within the div */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+/*--------------------------------------*/
+
+/*Footer*/
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+}
+.footer-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+.footer-links ul li{
+    margin-bottom: 10px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+}
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer-container .social-buttons a{
+    display: inline-flex;
+    float: right;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.footer-container .social-buttons a::before{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* Stack footer elements vertically on smaller screens */
+        align-items: center;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .footer-links ul {
+        text-align: center;
+        margin-top: 10px; /* Add some space between footer links */
+    }
+}
+/*--------------------------------------*/

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/contact.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+     
+    <!--Main Content Area-->
+    <main>
+    <!--Header Section-->
+        <div class="contactUs-heading">
+            <h1>Contact Us</h1>
+            <h2>IndieBeat Music: Where Music Brings Joy</h2>
+            <p>
+                At IndieBeat, we're more than just a music website; we're a community of music lovers, artists, and enthusiasts. Your voice matters to us, and we're here to listen. 
+                Whether you want to share your thoughts on the latest indie tracks, inquire about partnerships, or simply connect with fellow music aficionados, this is the place to do it.
+            </p>
+            <br>
+            <p>
+                Don't hesitate to reach out, we're eager to hear from you. Use the contact form below, drop us an email, or connect with us on social media. 
+                Let's keep the IndieBeat Music experience alive together!
+            </p>
+        </div>
+        <br>
+    <!----------------------------------------------------------->
+
+    <!--Contact Information Section-->
+    <section class="ContactInformation-Section">  
+        <div class="musicplayer-container">
+            <div class="album-art">
+                <img src="../Assets/Images/music_guy.jpeg" alt="Album Cover" width="350px">
+            </div>
+            <div class="song-info">
+                <h2>Song Title</h2>
+                <p>Artist Name</p>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar" class="progress"></div>
+                <br>
+                <div class="duration">
+                    <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="controls">
+                <button class="fa fa-step-backward" id="prev-button"></button>
+                <button class="fa fa-play" id="play-button"></button>
+                <button class="fa fa-step-forward" id="next-button"></button>
+            </div>
+        </div>
+        
+        <div class="contact-information-container">
+            <h2 style="color: white; text-align: center;">CONTACT INFORMATION</h2>
+            <br>
+            <div class="general-inquiries">
+                <h3>General Inquiries</h3>
+                <p>Email Address: indiebeat@gmail.com</p>
+                <p>Phone Number: +27 82 459 2356</p>
+                <p>Technical Support: indiebeat@helpdesk.com</p>
+            </div>
+            <br>
+            <div class="contact-hours">
+                <h3>Responsive Times</h3>
+                <p>Monday to Friday</p>
+                <p>09:00 - 16:00</p>
+            </div>
+            <br>
+            <div class="contact-socialMedia">
+                <h2>Social Media</h2>
+                <p>Stay connected with us on our social media channels for the latest updates, news, and music discoveries:</p>
+                <ul>
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------->
+    
+    <!--Additional Information Section-->
+    <section class="Additional-Information-Section">
+        <div class="additional-information-container">
+            <br>
+            <div class="feedback">
+                <h3>Feedback and Suggestions</h3>
+                <p>We greatly value your feedback and suggestions as they help us improve our website and content. Please don't hesitate to share your thoughts using the contact form above.</p>
+                <br>
+                <h3>Newsletter</h3>
+                <p>Stay in the loop with our newsletter. Subscribe to receive the latest news, music reviews, and exclusive content:</p>
+                <p><a href="link-to-newsletter-subscription">Subscribe to Newsletter</a></p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <!----------------------------------------------------------->
+
+    <!--Contact Form Section-->
+    <section class="ContactForm-Section">
+        <h2>CONTACT US</h2>
+        <div class="contact-form-container">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="updates">I would like to receive updates and newsletters:</label>
+                    <input type="checkbox" id="updates" name="updates" value="Yes">Yes</input>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                    <button type="clear">Clear</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!----------------------------------------------------------->
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <!----------------------------------------------------------->
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                    <p>Content Updated in September</p>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+        </div>
+    </footer>
+    <!----------------------------------------------------------->
+
+</body>
+</html>

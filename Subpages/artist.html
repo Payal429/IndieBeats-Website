@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+   <!--Embedded CSS Style-->
+   <style>
+        /* Styling for the heading section */
+        .heading {
+            background-image: url('../Assets/Images/musicbackground.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+
+        /* Styling for the heading's h1 element */
+        .heading h1 {
+            font-family: Bungee;
+            font-weight: normal;
+            font-size: 30px;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+
+        /* Styling for the heading's p element */
+        .heading p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /* Styling for section headers (e.g., Overview, Musical Career) */
+        #overview h3,
+        #musical-career h3,
+        #musical-style h3,
+        #hits-and-collaborations h3,
+        #connecting h3 {
+            text-align: left;
+            padding: 10px;
+            margin: 0;
+            padding-bottom: 10px;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: #C3FD02;
+        }
+
+        /* Styling for section content paragraphs */
+        #overview p,
+        #musical-career p,
+        #musical-style p,
+        #hits-and-collaborations p,
+        #connecting p {
+            font-family: Roboto;
+            font-weight: normal;
+            margin: 0;
+            font-size: 16px;
+            padding: 10px;
+            padding-bottom: 10px;
+            line-height: 1.5;
+            color: white; /* Text color for the content */
+        }
+
+        /* Styling for the latest music section */
+        #latest-music-section {
+            background-color: #C3FD02;
+            padding: 5px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        /* Styling for the latest music section's h2 element */
+        #latest-music-section h2,
+        .upcoming-events h2 {
+            font-family: Bungee;
+            font-weight: normal;
+            font-size: px; /* Replace with the appropriate size */
+            letter-spacing: 5px;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Styling for individual music items in the latest music section */
+        .latest-music {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Styling for each music item */
+        .music-item {
+            background-color: white;
+            color: black;
+        }
+
+        /* Styling for music item headers */
+        .music-item h3 {
+            text-align: left;
+            padding: 10px;
+            margin: 0;
+            padding-bottom: 10px;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Styling for music item descriptions */
+        .music-item p {
+            color: black;
+            font-family: Roboto;
+            font-weight: normal;
+            margin: 0;
+            font-size: 16px;
+            padding-bottom: 10px;
+            padding: 10px;
+        }
+
+        /* Styling for the upcoming events section */
+        .upcoming-events {
+            background-color: white;
+            border: 1px solid #C3FD02;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        /* Styling for individual event items */
+        .event {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #C3FD02;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            /* Add your responsive CSS rules here */
+            #latest-music-section h2,
+            .upcoming-events h2 {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+
+            .latest-music {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+            }
+        }
+</style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <header class="heading">
+            <h1>Connecting with Artist Arjun Kanungo</h1>
+            <p>A Journey Through His Musical World</p>
+        </header>
+        <br>
+        <section id="overview">
+            <h3>Arjun Kanungo: A Brief Overview</h3>
+            <p>
+                Arjun Kanungo, a name that resonates with versatility and innovation in the music industry, has been making 
+                waves with his unique blend of pop, electronic, and Indian music influences. Born and raised in Mumbai, 
+                India, Arjun's journey from an engineer to a musical sensation is nothing short of inspiring.
+            </p>
+        </section>
+        <section id="musical-career">
+            <h3>Musical Career</h3>
+            <p>
+                Arjun Kanungo burst onto the music scene with his debut single, "Baaki Baatein Peene Baad," in 2015. 
+                The song was an instant hit and established him as a formidable force in the industry. Since then, he has 
+                released a string of successful singles and albums, each showcasing his evolving style and musical experimentation.
+            </p>
+        </section>
+        <section id="musical-style">
+            <h3>Musical Style</h3>
+            <p>
+                Arjun's music is characterized by its fusion of various genres. He seamlessly blends contemporary pop 
+                with traditional Indian elements, creating a sound that is both catchy and soulful. His soothing vocals, 
+                coupled with electronic beats and meaningful lyrics, make his music universally relatable.
+            </p>
+        </section>
+        <section id="hits-and-collaborations">
+            <h3>Hits and Collaborations</h3>
+            <p>
+                Throughout his career, Arjun Kanungo has delivered numerous chart-toppers, including "Fursat," "La La La," 
+                and "Gallan Tipsiyaan." He's also known for his collaborations with other talented artists, pushing the 
+                boundaries of creativity in the Indian music scene.
+            </p>
+        </section>
+        <section id="connecting">
+            <h3>Connecting with Arjun Kanungo</h3>
+            <p>
+                IndieBeat offers you the opportunity to connect with Arjun Kanungo directly. Explore his latest music, 
+                watch his mesmerizing videos, and stay updated with his upcoming projects. Whether you're a fan or an 
+                aspiring artist, Arjun's journey serves as an inspiration for all those looking to break barriers and 
+                make their mark in the independent music world.
+            </p>
+        </section>
+        <br><br>
+
+        <section id="latest-music-section">
+            <h2>Latest Music</h2>
+            <div class="latest-music" style="background-color: black;">
+
+                <div class="music-item"s>
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 2" width="300px" height="300px">
+                    <h3>Danger</h3>
+                    <p>Artist: Arjun Kanungo</p>
+                    <p>Release Date: July 5, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 1" width="300px" height="300px">
+                    <h3>Sach Bata Mujhe</h3>
+                    <p>Artist: Arjun Kanungo and Shirley Setia</p>
+                    <p>Release Date: July 31, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 1" width="300px" height="300px">
+                    <h3>India to Japan</h3>
+                    <p>Artist: Arjun Kanungo, Shirley Setia <br>and Cyber Rui</p>
+                    <p>Release Date: August 3, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 2" width="300px" height="300px">
+                    <h3>Kismat - Radio Edit</h3>
+                    <p>Artist: Arjun Kanungo</p>
+                    <p>Release Date: August 3, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 1" width="300px" height="300px">
+                    <h3>Kehne Ko Kya Raha</h3>
+                    <p>Artist: Arjun Kanungo and Nemo</p>
+                    <p>Release Date: August 3, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 2" width="300px" height="300px">
+                    <h3>Tu Hain</h3>
+                    <p>Artist: Arjun Kanungo and Zaeden</p>
+                    <p>Release Date: August 3, 2023</p>
+                </div>
+                <div class="music-item">
+                    <img src="../Assets/Images/industry2.jpg" alt="Album Cover 2" width="300px" height="300px">
+                    <h3>Destiny</h3>
+                    <p>Artist: Arjun Kanungo</p>
+                    <p>Release Date: August 3, 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <h3>Event 1: RAAG X VEDA'S Present ARJUN KANUNGO & ASH KING Live</h3>
+                <p>Date: 02 Jul 2023 5:30 PM</p>
+                <p>Location: The Cindrella Hotel, Siliguri <br>
+                    3rd Mile, Siliguri, Sevoke Rd, Chayan Para, Siliguri, West Bengal 734008, India</p>
+            </div>
+            <div class="event">
+                <h3>Event 2: ARJUN KANUNGO LIVE HYDERABAD</h3>
+                <p>Date: 08 Jul 2023 8:00 PM</p>
+                <p>Location: Snort: Hyderabad <br>
+                    Survey no 41/6, Opposite Meenakshi Sky lounge, Novotel Road, Hitex Road, Khanamet, Kothaguda, Hyderabad, Telangana 500081, India</p>
+            </div>
+            <div class="event">
+                <h3>Event 3: Friendship Day Music Festival: ARJUN KANUNGO X LOST STORIES X DIKSHANT</h3>
+                <p>Date: 15 Oct 2023 7:00 PM</p>
+                <p>Location: Dublin Square, Phoenix Market city: Kurla <br>
+                    Dublin Square, Lal Bahadur Shastri Marg, Kurla, Mumbai, Maharashtra 400070, Indiay</p>
+            </div>
+            <div class="event">
+                <h3>Event 4: Arjun Kanungo Live In Concert</h3>
+                <p>Date: 06 Aug 2023 5:00 PM</p>
+                <p>Location: The Cindrella Hotel, Siliguri <br>
+                    3rd Mile, Siliguri, Sevoke Rd, Chayan Para, Siliguri, West Bengal 734008, India</p>
+            </div>
+        </section>
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

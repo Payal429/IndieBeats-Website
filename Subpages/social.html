@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+    .social-heading h1{
+        font-family: Bungee;
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin: 0;
+        color: #FF3179;
+        text-align: center;
+    }
+    .social-heading p{
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0px;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+    /* Style the artists gallery */
+    .artists-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    /* Style each artist section */
+    .artist {
+        border: 5px solid #FF3179;
+        padding: 20px;
+        text-align: center;
+        background-color: white;
+    }
+    .artist img {
+        max-width: 100%;
+        height: 350px;
+        border: 3px solid #B14EB2 ;
+    }
+    .artist h2 {
+        margin: 10px 0;
+        font-family: Bungee;
+        font-weight: normal;
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin: 0;
+        color: black;
+        text-align: center;
+    }
+    .social-media-links {
+        margin-top: 10px;
+    }
+    .social-media-links h3{
+        text-align: center;
+        margin-top: 10px;
+        font-family: Orbitron;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    .social-media-links a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 18px;
+        font-style: italic;
+    }
+    /*Sub Navbar*/
+.Gallery-navbar {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.Gallery-navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.Gallery-navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.Gallery-navbar a {
+    text-decoration: none;
+    color: #B14EB2;
+    font-weight: bold;
+}
+
+.Gallery-navbar a:hover {
+    color: #FF3179;
+}
+    /* Responsive layout for smaller screens */
+    @media screen and (max-width: 768px) {
+        .artists-gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <section id="social-section-welcome">
+            <div class="social-heading">
+                <h1>Social Media</h1>
+                <p>
+                    Welcome to IndieBeat, the home of independent Indian artists making waves in the music scene! 
+                    Join us on a sonic journey through the diverse and vibrant world of indie music from the heart of India. 
+                    Connect with fellow music enthusiasts, discover fresh tracks, and support the homegrown talent that's carving 
+                    its niche in the industry. Whether you're an artist looking to showcase your artistry or a fan seeking fresh beats, 
+                    IndieBeat is your stage.
+                </p>
+                <p>
+                    Here, the rhythm of the digital world meets the beat of indie music. Our Social Media Hub is your backstage pass to connect, engage, and stay in tune with the artists who make the indie scene come alive. 
+                    In this space, we bridge the gap between fans and musicians, where every click, like, and share amplifies the indiebeat. Follow us on our social media platforms to access exclusive content, behind-the-scenes glimpses, and the latest updates from your favorite indie artists.
+                    As the indie music universe continues to expand, our social media channels serve as your compass, navigating you through a symphony of genres, stories, and talents. Discover new artists, relive memorable live performances, and interact with a community that shares your passion for independent expression.
+                </p>
+            </div>
+        </section>
+        <div class="Gallery-navbar">
+            <ul>
+                <li><a href="../Subpages/events.html">Events</a></li>
+                <li><a href="../Subpages/genres.html">Genres</a></li>
+                <li><a href="../Subpages/awards.html">Awards</a></li>
+                <li><a href="../Subpages/social.html">Social Media</a></li>
+                <li><a href="../Subpages/albums.html">Albums</a></li>
+                
+            </ul>
+        </div>
+        <!--Section-->
+        <section class="artists-gallery">
+            <div class="artist">
+                <img src="../Assets/Images/Darshan_social.jpg" alt="Darshan Raval">
+                <h2>Darshan Raval</h2>      
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>16.7M Followers</span></h3>
+                    <a href="https://www.instagram.com/darshanravaldz/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>20.2M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/2GoeZ0qOTt6kjsWW4eA6LS" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+
+            <div class="artist">
+                <img src="../Assets/Images/Jonita_social.jpg" alt="Jonita Gandhi">
+                <h2>Jonita Gandhi</h2>       
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>3M Followers</span></h3>  
+                    <a href="https://www.instagram.com/jonitamusic/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>18.2M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/00sCATpEvwH48ays7PlQFU" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+                
+            <div class="artist">
+                <img src="../Assets/Images/Arjun_social.jpg" alt="Arjun Kanungo">
+                <h2>Arjun Kanungo</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>2M Followers</span></h3>
+                    <a href="https://www.instagram.com/arjunkanungo/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>6.8M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/3bAFvRjPZrpRz9Ox1sElQa" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+
+            <div class="artist">
+                <img src="../Assets/Images/Zaeden_social.jpg" alt="Zaeden">
+                <h2>Zaeden</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>357K Followers</span></h3>
+                    <a href="https://www.instagram.com/zaeden/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>3.1M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/5lMNphVhMLvhFmTWiKiLA2" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+
+            <div class="artist">
+                <img src="../Assets/Images/King_social.jpg" alt="King">
+                <h2>King</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>3M Followers</span></h3>
+                    <a href="https://www.instagram.com/ifeelking/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>13.2M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/5NHm4TU5Twz7owibYxJfFU" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+                
+            <div class="artist">
+                <img src="../Assets/Images/armaan_social.jpg" alt="Armaan Malik">
+                <h2>Armaan Malik</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>14.3M Followers</span></h3>
+                    <a href="https://www.instagram.com/armaanmalik/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>14.7M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/1dqPqXbxxYtCtLbKeAN2Ss" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+                
+            <div class="artist">
+                <img src="../Assets/Images/Akull_social.jpg" alt="Akull">
+                <h2>Akull</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>283K Followers</span></h3>
+                    <a href="https://www.instagram.com/akullofficial/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>1.6M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/1dqPqXbxxYtCtLbKeAN2Ss" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+                
+            <div class="artist">
+                <img src="../Assets/Images/Mitraz_social_2.jpg" alt="Mitraz">
+                <h2>Mitraz</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>140K Followers</span></h3>                    
+                    <a href="https://www.instagram.com/mitrazmusic/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>3.6M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/3iGhlvzpXc0UHBQ7klAItX" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+                
+            <div class="artist">
+                <img src="../Assets/Images/Kshmr_social_3.jpg" alt="Kshmr">
+                <h2>Kshmr</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>1.6M Followers</span></h3>
+                    <a href="https://www.instagram.com/kshmr/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>6M Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/2wX6xSig4Rig5kZU6ePlWe" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+
+            <div class="artist">
+                <img src="../Assets/Images/Lisa_social.jpg" alt="Lisa Mishra">
+                <h2>Lisa Mishra</h2>
+                <div class="social-media-links">
+                    <h3 class="artist-followers"><span>462K Followers</span></h3>                    
+                    <a href="https://www.instagram.com/lisamishramusic/#" class="instagram-link">Instagram</a>
+                    <h3 class="artist-followers"><span>879K Followers</span></h3>
+                    <a href="https://open.spotify.com/artist/418X5slNWlJwym4x3Oq3Cs" class="spotify-link">Spotify</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

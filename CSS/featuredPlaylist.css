@@ -1,0 +1,280 @@
+/* styles.css */
+.featured-playlist-section{
+    width: 100%;
+    background-color: #10B4BD;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Heading Styles */
+#featured-playlist {
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    margin: 20px; /* Margin to create space around the section */
+}
+#featured-playlist h1 {
+    color: White; /* Text color for the heading */
+    font-size: 30px; /* Font size for the heading */
+    font-family: Bungee;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 10px; /* Margin below the heading */
+}
+#featured-playlist p {
+    color: white; /* Text color for paragraphs */
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for better readability */
+}
+.playlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    margin: 2;
+}
+/* Style for the song image container */
+#song-image-container {
+    text-align: center; /* Center its contents horizontally */
+    padding-top: 20px; /* Add some top padding for spacing */
+}
+
+/* Style for the song image */
+#song-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Add any other desired styles here */
+}
+.playlist-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #10B4BD;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.playlist-list h2 {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-family: Bungee;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    padding: 5px;
+    padding-bottom: 20px;
+}
+
+.playlist-list ul {
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+    list-style: none;
+    height: 250px; /* Set a fixed height for the playlist */
+    width: 700px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.playlist-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.playlist-list li:hover {
+    background-color: black;
+    font-weight: bold;
+    color: #10B4BD;
+}
+
+/* Player control left side of webpage */
+.player-controls {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 650px;
+}
+.player-controls h3 {
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: Orbitron;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.player-controls p {
+    text-align: center;
+    color: black;
+    padding-bottom: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.player-info,
+.progress-container,
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.player-info p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.audio {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.progress-container {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    position: relative;
+}
+
+#progress-bar {
+    background-color: black;
+    height: 100%;
+    width: 0;
+    position: absolute;
+}
+
+.buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.duration {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    color: black;
+}
+.song-details-right{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.song-details-right h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+    color: black;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+    font-family: Orbitron;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Adjust the styling for #song-description if necessary */
+#song-description {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: black;
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+    padding: 20px;
+}
+/* Responsive styles for screens with a maximum width of 768px (typical mobile devices) */
+@media screen and (max-width: 768px) {
+    /* Adjust font size for headings and paragraphs */
+    #featured-playlist h1 {
+        font-size: 24px; /* Decrease font size for the heading */
+    }
+
+    #featured-playlist p {
+        font-size: 14px; /* Decrease font size for paragraphs */
+    }
+
+    .playlist-list h2 {
+        font-size: 20px; /* Decrease font size for playlist heading */
+    }
+
+    .playlist-list ul {
+        width: 100%; /* Make the playlist list full width */
+        height: auto; /* Remove fixed height to allow content to expand */
+        max-height: 300px; /* Limit the playlist height with vertical scrolling */
+    }
+
+    .playlist-list li {
+        font-size: 14px; /* Decrease font size for playlist items */
+    }
+
+    /* Adjust width for player controls and song details */
+    .player-controls, .song-details-right {
+        width: 100%; /* Make them full width for mobile */
+    }
+
+    /* Adjust font size and padding for player controls */
+    .player-controls h3 {
+        font-size: 18px; /* Decrease font size for player controls heading */
+        padding-bottom: 5px; /* Reduce padding for readability */
+    }
+
+    .player-controls p {
+        font-size: 14px; /* Decrease font size for player controls text */
+        padding-bottom: 10px; /* Reduce padding for readability */
+    }
+
+    /* Adjust font size for song details */
+    .song-details-right h3 {
+        font-size: 20px; /* Decrease font size for song details heading */
+        margin-top: 10px; /* Reduce top margin */
+    }
+    /* Move song description below the music player */
+    .song-details-right {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align elements horizontally */
+        margin-top: 20px; /* Add spacing between music player and description */
+    }
+
+    /* Adjust styling for song description */
+    #song-description {
+        font-size: 14px; /* Decrease font size for song description */
+        margin-top: 10px; /* Reduce top margin */
+        text-align: center; /* Center-align the text */
+    }
+}
+   
+
+
+
+

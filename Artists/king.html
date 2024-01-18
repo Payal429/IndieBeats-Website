@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+ h1{
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Center the content within the container */
+        /* Add more styles for your content here */
+        .artist-name h2 {
+        /* Explore section title styling */
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        }
+
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+            
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4 {
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Style the paragraphs */
+        p {
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>King Rocco</h2>
+                <h3>Genre: Hip Hop, Rap </h3>
+            </div>
+            <img src="../Assets/Images/King_Bio.jpg" alt="" class="bio-image" width="300px" height="300px">
+            <div class="artist-bio">
+                <p><strong>Full Name: Arpan Kumar Chandel</strong> </p>
+                <p><strong>Date of Birth: 10 October 1998</strong> </p>
+                <p><strong>Place of Birth: Uttar Pradesh, India.</strong> </p>
+                <p><strong>Occupation: Rapper, Producer & Singer</strong> </p>
+            </div>
+            <div class="artist-into">
+                <h4>Introduction</h4>
+                <p></p>
+            </div>
+            <div class="artist-life">
+                <h4>Early Life and Education</h4>
+                <p>
+                    Arpan Kumar Chandel, better known by his stage name King, is a 24-year-old Indian rapper, songwriter, and singer. He was born on October 10, 1998, 
+                    in Uttar Pradesh, India. He did his schooling at Navyug Sr. Secondary School, Vinay Marg, Delhi. He then attended Dyal Singh College, University of 
+                    Delhi to pursue a Bachelor of Arts. However, later, he dropped out of college to pursue a career in rapping.
+                </p>
+            </div>
+            <div class="artist-fame">
+                <h4>Rise to Fame</h4>
+                <p>
+                    King's professional life began in 2019 with the premiere of the television program MTV Hustle. King performed for Raftaar, Raja Kumari, and Nucleya 
+                    on this television program. King is from New Delhi originally.The 2019 MTV Hustle fame Rapper and singer King, also known as King Rocco, and aka Badnaam Raja, 
+                    is well-known in India. King's real name is Arpan Kumar Chandel. The musician got his musical career off to a very early start. King Hustle was a contestant 
+                    in MTV Hustle 2.0. 
+                </p>
+            </div>
+            <div class="artist-career">
+                <h4>Musical Career</h4>
+                <p>
+                    King posted his rap videos on various social media profiles while he was still in school. He started his YouTube channel 'King Rocco' in 2012 and uploaded his 
+                    first 'Boombass' video in 2015. King released his debut music album, 'Circumstances,' on October 5. 'She Know,' 'Purple Grime State,' 'The Division,' and 'Clearly now' 
+                    are a few of the songs that were released under the album. In 2019, he tried out for the reality show 'MTV Hustle.' King auditioned digitally and sent his rap videos 
+                    to the MTV Hustle creators. 
+                    <br><br>
+                    King was then chosen for the final audition, which was judged by Raftaar, Raja Kumari, Nucleya, and Naezy, four well-known Indian rappers. At the audition round, 
+                    King sang the song 'Mai Khoya Rahu,' and with his performance, he became the primary candidate chosen from the top 15 contestants. He was one of the show's top 
+                    five contestants. In 2020, he released the music album 'The Carnival,' which included songs like 'Dracula,' '90s,' 'Mafiia,' 'Let The Eyes Speak,' 'IICONIC,' and 
+                    'Tu Aake Dekhlé.' During the same year, he released another album titled 'Heartbreak, Made Me Do It.
+                    <br><br>
+                    Rider Anthem 2.O
+                    At India's largest riding festival, India Bike Week, held in Vagator, Goa on December 2–3, 2022, PETRONAS Sprinta, the premium motorcycle oil brand from PETRONAS 
+                    Lubricants (India) Pvt. Ltd. (PLIPL), unveiled its updated Rider Anthem. The catchy rap song Rider Anthem 2.0, written and performed by Bollywood rapper King, 
+                    is based on the slogan Power up with PETRONAS Sprinta. The original Rider Anthem, which featured Bollywood singer Arjun Kanungo, generated a lot of discussions last 
+                    year, and it is anticipated that this rap version will deepen the relationship with the bike community.
+                    <br><br>
+                    The two days of the celebration of the Riding community's passion, thrill, and fraternity saw passionate participation from all over the nation in a wide range of events. 
+                    In the meantime, hundreds of bikers who attended the two-day event took part in a unique competition run by PETRONAS Sprinta. They had a chance to win the grand prize—a 
+                    motorcycle and other premium goods—in the competition.
+                </p>
+            </div>
+            <div class="artist-achievements">
+                <h4>Achievements</h4>
+                <p>
+                    King was one of the top 5 finalists on the MTV reality TV show "MTV Hustle" in 2019. This show helped him gain national recognition and a large fan base.
+                    King has been nominated for several awards, including the Mirchi Music Awards and the Global Indian Music Academy Awards.
+                </p>
+            </div>
+
+
+            
+        </section> 
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

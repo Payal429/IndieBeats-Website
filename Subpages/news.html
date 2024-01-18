@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+
+    /* Main content area styles */
+    main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #F67C00;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: white;
+        border-radius: 0.5%;
+    }
+
+    /* Featured article styles */
+    .article {
+        text-align: center;
+        color: white;
+    }
+    .article img {
+        max-width: 100%;
+        height: auto;
+        border: 5px solid black;
+        border-radius: 10%;
+    }
+    .article h2{
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    .article h3 {
+        margin-top: 10px;
+        font-family: Orbitron;
+        font-weight: bold;
+        letter-spacing: 5px;
+        font-size: 18px;
+    }
+    .article p {
+        margin-top: 10px;
+        font-size: 16px;
+        font-family: Roboto;
+    }
+    .article a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    /* Latest news styles */
+    .latest-news ul {
+        list-style: none;
+        padding: 0;
+    }
+    .latest-news li {
+        border-radius: 0.5%;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .latest-news img {
+        max-width: 100%;
+        height: 210px;
+        border: 2px solid #F67C00;
+        border-radius: 2%;
+    }
+    .latest-news h2{
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        margin: 0;
+        padding-bottom: 5px; 
+    }
+    .latest-news h3 {
+        margin-top: 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    .latest-news h4 {
+        font-size: 14px;
+        color: white;
+        margin-top: 10px;
+        font-style: italic;
+    }
+    .latest-news p {
+        margin-top: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+    .latest-news a {
+        text-decoration: none;
+        color: #F67C00;
+        font-weight: bold;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+    /* Responsive styles for screens with a maximum width of 768px */
+    @media screen and (max-width: 768px) {
+        /* Adjust font size for headings */
+        .article h2,
+        .latest-news h2 {
+            font-size: 20px;
+        }
+
+        /* Adjust font size for h3 */
+        .article h3,
+        .latest-news h3 {
+            font-size: 18px;
+        }
+
+        /* Adjust font size for p */
+        .article p,
+        .latest-news p {
+            font-size: 14px;
+        }
+
+        /* Reduce image size */
+        .article img,
+        .latest-news img {
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #F67C00;
+            border-radius: 2%;
+        }
+
+        /* Adjust padding for article and latest news items */
+        .article,
+        .latest-news li {
+            padding: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Section-->
+        <section class="article">
+            <h2>Featured Article</h2>
+            <article>
+                <img src="../Assets/Images/arjun_news.jpg" alt="Featured Article Image" width="600" height="auto">
+                <h3>Arjun Kanungo Birthday Special: A Musical Journey Through Iconic Duets</h3>
+                <p>Published on September 6, 2023 by Prateek Sur</p>
+                <p>As Arjun Kanungo turns 33, we delve into some of the most unforgettable musical collaborations that have defined his journey, 
+                    showcasing his versatility as an artist and his knack for crafting songs that leave a lasting impact on listeners.</p>
+                <a href="https://www.outlookindia.com/art-entertainment/arjun-kanungo-birthday-special-a-musical-journey-through-iconic-duets-news-316155">Read more</a>
+            </article>
+        </section>
+
+        <!--Section-->
+        <section class="latest-news">
+            <h2>Latest News</h2>
+            <ul>
+                <li>
+                    <img src="../Assets/Images/zaeden_news.jpg" alt="News Image 1" width="350px" height="200px">
+                    <h3>Indian pop sensation Zaeden recently launched his bespoke fragrance brand Sol inspired by ‘Stories of Life’</h3>
+                    <h4>Author: Srushti Kulkarni </h4>
+                    <h4>Published on August 18, 2023</h4>
+                    <p>Musician Sahil Sharma, better known by his stage name Zaeden, who is obsessed with fragrances finally makes his dream come true by...</p>
+                    <a href="https://www.indulgexpress.com/life-style/beautyandwellness/2023/aug/18/indian-pop-sensation-zaeden-recently-launched-his-bespoke-fragrance-brandsol-inspired-by-stories-o-52212.html">Read more</a>
+                </li>
+                <li>
+                    <img src="../Assets/Images/King_news.jpg" alt="News Image 2" width="350px" height="200px">
+                    <h3>KING Announces 11-City India Tour Ahead of ‘New Life’ Album Launch</h3>
+                    <h4>Author: Anurag Tagat</h4>
+                    <h4>Published on September 14, 2023</h4>
+                    <p>The hip-hop and pop artist’s run of shows will start in Bengaluru on October 28th and end on December 29th in Goa</p>
+                    <a href="https://rollingstoneindia.com/king-new-life-india-concert-tour-dates-tickets/">Read more</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

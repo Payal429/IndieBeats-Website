@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        h1{
+            padding-top: 15px;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-family: Bungee;
+            font-weight: normal;
+            letter-spacing: 5px;
+            font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Center the content within the container */
+        /* Add more styles for your content here */
+        .artist-name h2 {
+            /* Explore section title styling */
+            padding-top: 15px;
+            text-align: center;
+            color: black;
+            text-transform: uppercase;
+            font-family: Bungee;
+            font-weight: normal;
+            letter-spacing: 5px;
+            font-size: 24px;
+        }
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4{
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+        /* Style the paragraphs */
+        p{
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>Zaeden</h2>
+                <h3>Genre: Pop, dance-pop, electronic</h3>
+            </div>
+            <img src="../Assets/Images/Zaeden_Bio.jpg" alt="" class="bio-image" width="300px" height="300px">
+
+            <div class="artist-bio">
+                <p><strong>Full Name: Sahil Sharma </strong></p>
+                <p><strong>Date of Birth: 2 July 1995</strong></p>
+                <p><strong>Place of Birth: Gurgaon, Haryana, India</strong></p>
+                <p><strong>Occupation: Singer, Producer, DJ, Sound Engineer</strong></p>
+            </div>
+
+            <div class="artist-into">
+                <h4>Introduction</h4>
+                <p>
+                    Zaeden, whose real name is Sahil Sharma, is an Indian electronic music producer and DJ known for his contributions to the 
+                    electronic dance music (EDM) scene in India. He gained recognition for his energetic and melodic tracks, and he has played 
+                    a pivotal role in popularizing EDM in the country. Zaeden's music often combines elements of progressive house, future bass, 
+                    and pop, creating a unique and captivating sound.
+                </p>
+            </div>
+
+            <div class="artist-life">
+                <h4>Early Life and Education</h4>
+                <p>
+                    Zaeden was born on July 2, 1995, in New Delhi, India. His passion for music ignited at a young age, and he started experimenting 
+                    with music production during his teenage years. While pursuing his education, he continued to develop his skills as a music producer 
+                    and DJ, gradually honing his craft.
+                </p>
+            </div>
+
+            <div class="artist-fame">
+                <h4>Rise to Fame</h4>
+                <p>
+                    Zaeden's rise to fame began when he gained recognition for his remix of the track "Magic" by Coldplay in 2014. This remix garnered widespread 
+                    attention and established him as a promising talent in the EDM scene. Subsequently, he released original tracks and remixes that further solidified 
+                    his presence in the industry.
+                </p>
+            </div>
+
+            <div class="artist-career">
+                <h4>Musical Career</h4>
+                <p>
+                    Sharma began his career at the age of 14, by mixing tapes of dance music releases and distributing them among his friends, which led him to release 
+                    his first single titled "Land of Lords" in 2014. That same year, his remix of Coldplay's "Magic" aired on Dutch DJ Hardwell's radio show Hardwell On Air, 
+                    making him one of the youngest DJs to be featured on the show. He further released his official remix of Maroon 5's single "Don't Wanna Know" that year. 
+                    In 2015, he signed with Spinnin' Records and released his single "Yesterday," a collaborative effort with American DJ Borgeous.
+                    <br><br>
+                    In 2016, Sharma was a closing act for DJ David Guetta's Mumbai concert. That same year, he became one of the few Indian artists to have performed at the Tomorrowland 
+                    Festival in Belgium, where he premiered "Yesterday" along with his remix of Justin Bieber's "Love Yourself." In July of that year, Sharma released his second single 
+                    under Spinnin' titled "Never Let You Go," a collaborative effort with DJ duo Nina & Malika. The track featured vocals by Cimo Frankel, and the subsequent music video was 
+                    shot across Europe. 
+                    <br><br>
+                    He was also featured on GQ magazine's 'Best Dressed List 2016' and MensXP's list of ‘Top 50 Indians who defined fashion in 2016.'He also spoke at the TEDx conference at 
+                    The Heritage School that year.In 2017, Sharma released his official remix of Maroon 5's collaborative effort with American rapper Kendrick Lamar, "Don't Wanna Know." 
+                    He also released his third single titled "City of the Lonely Hearts" featuring Cimo Frankel. That same year, he was one of the opening acts for the Mumbai date on 
+                    Justin Bieber's Purpose World Tour. On 5 September 2019, Zaeden released his first Hindi non-film song, "tere bina" on VYRL, Universal Music along with a music video 
+                    featuring Amyra Dastur. 
+                    <br><br>
+                    A few weeks later, he released its acoustic version with Jonita Gandhi. A regular performer at Tomorrowland, he debuted "tere bina" during his third appearance there. 
+                    During the time India was in a lockdown, he went on to release four more singles, "kya karoon?", "dooriyan", "intezaar," and "socha na tha". He also collaborated with Lost 
+                    Stories for "Noor," and Sez on the Beat for "Kahaani 2020". All the tracks garnered positive response from the audiences and the industry veterans alike. In 2021, he released 
+                    his debut album titled "Genesis 1:1". It featured 11 tracks. 
+                </p>
+            </div>
+
+            <div class="artist-achievements">
+                <h4>Achievements</h4>
+                <p>
+                    Zaeden's talent and dedication to EDM have earned him recognition and a loyal fan base. He has contributed significantly to the growth of electronic music in India and has been a 
+                    prominent figure in the country's EDM scene. His tracks have received millions of streams on platforms like Spotify and YouTube.
+                </p>
+            </div>
+        </section> 
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

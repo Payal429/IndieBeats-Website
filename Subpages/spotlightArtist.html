@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--Embedded CSS Styling-->
+    <style>
+    /* Styling for the Welcome section heading */
+    .Spotlight-Welcome h1,
+    .spotlight h1 {
+        font-family: 'Bungee', sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin: 0;
+        color: white;
+        text-align: center;
+    }
+
+    /* Styling for the Welcome section paragraph */
+    .Spotlight-Welcome p,
+    .artist p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0;
+        line-height: 1.5;
+        padding-bottom: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Styling for the spotlight section */
+    section.spotlight {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    /* Styling for individual artist items */
+    .artist {
+        background-color: #10b4bdd8;
+        padding: 20px;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for artist names */
+    .artist h2 {
+        font-family: 'Bungee', sans-serif;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+
+    /* Styling for buttons */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+
+    /* Styling for button hover effect */
+    .btn:hover {
+        background-color: black;
+        color: #10B4BD;
+    }
+
+    /* Responsive styles for screens with a maximum width of 768px */
+    @media screen and (max-width: 768px) {
+        /* Adjust font size for headings */
+        .Spotlight-Welcome h1,
+        .spotlight h1 {
+            font-size: 24px;
+        }
+
+        /* Adjust font size and line height for paragraphs */
+        .Spotlight-Welcome p,
+        .artist p {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        /* Adjust padding for the spotlight section */
+        section.spotlight {
+            padding: 20px 0;
+        }
+
+        /* Reduce padding for artist items */
+        .artist {
+            padding: 10px;
+        }
+
+        /* Adjust font size for artist names */
+        .artist h2 {
+            font-size: 20px;
+        }
+
+        /* Adjust padding for buttons */
+        .btn {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+</style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Welcome Section-->
+        <section>
+            <div class="Spotlight-Welcome">
+                <h1>Welcome to the IndieBeat Artist Spotlight!</h1>
+                <p>
+                    Each spotlight feature is a journey into the heart and soul of these remarkable musicians, giving you a glimpse into their musical influences, 
+                    hometown vibes, and the compelling stories that fuel their artistry. Whether you're a seasoned indie music aficionado or just beginning your 
+                    exploration, our Artist Spotlight is your compass in this ever-evolving sonic landscape.
+                    Join us as we celebrate the artists who challenge conventions, break boundaries, and inspire us with their unique voices. From indie rock to 
+                    electronic, folk to experimental, and everything in between, our Artist Spotlight series promises to be a kaleidoscope of musical diversity. 
+                </p>
+            </div>
+        </section>
+        <!--Section-->
+        <section class="spotlight">
+            <h1>Artist Spotlight</h1>
+            <!--Spotlight Artist-->
+            <div class="artist">
+                <img src="../Assets/Images/Darshan.jpg" alt="Artist Name" width="300px" height="350px">
+                <h2>Darshan Raval</h2>
+                <p>
+                    Darshan Raval is a popular Indian singer, composer, and songwriter. He is known for his work in different languages including Hindi, Gujarati, 
+                    Punjabi, and Bengali. He is known for his soulful voice, versatile singing style, and energetic stage presence.Raval's music is a blend of pop, 
+                    rock, and Indian classical music. His songs often have catchy melodies and meaningful lyrics. He sings about a variety of topics, including love, 
+                    heartbreak, friendship, and social issues.</p>
+                <a href="../Artists/darshan.html" class="btn">Learn More</a>
+            </div>
+            <br>
+            <div class="artist">
+                <img src="../Assets/Images/Armaan.jpg" alt="Artist Name" width="300px" height="350px">
+                <h2>Armaan Malik</h2>
+                <p>
+                    Armaan Malik is a popular Indian singer, songwriter, and record producer. He is known for his singing in multiple languages, including Hindi, 
+                    Telugu, English, Bengali, Kannada, Marathi, Tamil, Gujarati, Punjabi, Urdu and Malayalam. Malik's music is a blend of pop, rock, and Indian 
+                    classical music. His songs often have catchy melodies and meaningful lyrics. He sings about a variety of topics, including love, heartbreak, 
+                    friendship, and social issues.
+                </p>
+                <a href="../Artists/armaan.html" class="btn">Learn More</a>
+            </div>
+            <br>
+            <div class="artist">
+                <img src="../Assets/Images/Zaeden.jpg" alt="Artist Name" width="300px" height="350px">
+                <h2>Zaeden</h2>
+                <p>
+                    Zaeden is an Indian-born, Dubai-based DJ and record producer. He is known for his unique sound that blends elements of EDM, hip hop, and trap. 
+                    His music is often described as energetic, danceable, and catchy.Zaeden is one of the most popular DJs and record producers in India today. 
+                    He is known for his unique sound, his energetic live performances, and his ability to connect with his audience.
+                </p>
+                <a href="../Artists/zaeden.html" class="btn">Learn More</a>
+            </div>
+            <br>
+            <br>
+            <div class="artist">
+                <img src="../Assets/Images/Jonita.jpg" alt="Artist Name" width="300px" height="350px">
+                <h2>Jonita Gandhi</h2>
+                <p>
+                    Jonita Gandhi is a Canadian playback singer of Indian descent. She is known for her versatile singing style and her ability to sing in a variety of 
+                    languages, including Hindi, Tamil, Telugu, Punjabi, Marathi, Gujarati, Bengali, Kannada, and Malayalam. Gandhi's music is a blend of pop, rock, and 
+                    Indian classical music. Her songs often have catchy melodies and meaningful lyrics. She sings about a variety of topics, including love, heartbreak, 
+                    friendship, and social issues.
+                </p>
+                <a href="../Artists/jonita.html" class="btn">Learn More</a>
+            </div>
+            <br>
+            <div class="artist">
+                <img src="../Assets/Images/Kshmr.jpg" alt="Artist Name" width="300px" height="350px">
+                <h2>Kshmr</h2>
+                <p>
+                    KSHMR is an American DJ, record producer, and musician. He is known for his unique sound that blends elements of electro house, 
+                    big room house, Indian classical music, and world music. His music is often described as energetic, danceable, and melodic. KSHMR began his career 
+                    in 2014, and he quickly rose to prominence in the electronic dance music scene. He has released music on major labels such as Spinnin' Records, 
+                    Dharma Worldwide, and Sony Music. He has also collaborated with some of the biggest names in the industry, including Tiesto, Dimitri Vegas & Like 
+                    Mike, and Alok.
+                </p>
+                <a href="../Artists/kshmr.html" class="btn">Learn More</a>
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

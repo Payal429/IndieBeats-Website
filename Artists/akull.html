@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        h1{
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Center the content within the container */
+        .artist-name h2 {
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        }
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4 {
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+        /* Style the paragraphs */
+        p {
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Style the buttons on hover */
+        .play:hover, .pause:hover, .forward:hover, .previous:hover {
+            background-color: black;
+        }
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>Akull</h2>
+                <h3>Genre: desi hip hop, desi pop, punjabi pop </h3>
+            </div>
+            <img src="../Assets/Images/Akull_Bio.jpg" alt="" class="bio-image" width="300px" height="300px">
+            <div class="artist-bio">
+                <p><strong>Full Name:  Akull Tandon</strong> </p>
+                <p><strong>Date of Birth: 5 August 1992</strong> </p>
+                <p><strong>Place of Birth: New Delhi, India</strong> </p>
+                <p><strong>Occupation: Singer, Composer, and Songwriter</strong> </p>
+            </div>
+            <div class="artist-into">
+                <h4>Introduction</h4>
+                <p>
+                    Akull Tandon, widely known as Akull, is a talented Indian singer, composer, and songwriter who has carved a niche for himself in the music 
+                    industry with his unique style and catchy tunes. With a knack for blending different musical genres and creating infectious melodies, Akull has 
+                    gained recognition for his chart-topping tracks and his ability to connect with a diverse audience.
+                </p>
+            </div>
+            <div class="artist-life">
+                <h4>Early Life and Education</h4>
+                <p>
+                    Akull Tandon, known professionally as Akull, is a 30-year-old Indian singer, composer, and music producer. He was born on August 5, 1992, in New Delhi, India. 
+                    He completed his schooling at Amity International School Saket Delhi and pursued a Bachelor of Commerce at the University of Delhi.Akull has been passionate about 
+                    music since childhood. He started learning to play musical instruments at a young age and began composing and singing his own songs in college. After graduating, 
+                    he moved to Mumbai to pursue a career in music.
+                </p>
+            </div>
+            <div class="artist-fame">
+                <h4>Rise to Fame</h4>
+                <p>
+                    Akull's journey to fame took a significant turn when he released his debut single, "Laal Bindi," in 2018. The song was an instant hit and showcased Akull's distinctive 
+                    style, blending contemporary pop with Punjabi and urban influences. The music video for "Laal Bindi" also garnered attention for its creative and visually appealing 
+                    storytelling.
+                </p>
+            </div>
+            <div class="artist-career">
+                <h4>Musical Career</h4>
+                <p>
+                    Following the success of "Laal Bindi," Akull continued to produce a series of popular singles, each with its own unique flavor. Some of his other well-received tracks 
+                    include "I Love You," "Daaru Peekay Nachna," and "Laal Chunariya." These songs showcased his versatility as an artist and solidified his presence in the music industry.
+                    <br><br>
+                    Akull's music often explores themes of love, relationships, and youthful exuberance, making it relatable and enjoyable for a wide range of listeners. His catchy tunes 
+                    and infectious beats have earned him a dedicated fan base.
+                </p>
+            </div>
+            <div class="artist-achievements">
+                <h4>Achievements</h4>
+                <p>
+                    Akull has earned recognition and appreciation for his contributions to the Indian music scene. His songs have received millions of views on platforms like YouTube, and 
+                    he has been nominated for various music awards. His ability to infuse freshness into his compositions has set him apart in the industry.
+                </p>
+            </div>
+        </section> 
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

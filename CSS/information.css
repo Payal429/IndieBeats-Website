@@ -1,0 +1,357 @@
+/* Style for the current page link */
+#information {
+    text-decoration: double underline;
+    text-decoration-skip-ink: none; /* Prevent the underline from extending into descenders */
+    padding-bottom: 5px; /* Adjust the padding to control the space between the text and the underline */
+    font-weight: bold;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.information-heading h1{
+    color: #F67C00;
+    text-align: center;
+    font-family: Bungee;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+.information-heading p {
+    color: white;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 10px;
+    margin: 20px;
+}
+.information-heading h2 {
+    color: #F67C00;
+    text-align: center;
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin:0;
+}
+/* Style the whole section */
+.more-about {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Style the heading "More about IndieBeat" */
+.more-about h2 {
+    padding-top: 15px;
+    text-align: center;
+    color: #F67C00;
+    text-transform: uppercase;
+    font-family: Bungee;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+/* Style the container for subsections */
+.more-about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* Style each subsection */
+.moreAbout-artist,
+.moreAbout-musicHistory,
+.moreAbout-newMusic,
+.moreAbout-musicNews {
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Style the images within each subsection */
+.moreAbout-artist img,
+.moreAbout-musicHistory img,
+.moreAbout-newMusic img,
+.moreAbout-musicNews img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Style the links and headings within each subsection */
+.moreAbout-artist h3,
+.moreAbout-musicHistory h3,
+.moreAbout-newMusic h3,
+.moreAbout-musicNews h3 {
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+/* Style the links within each subsection */
+.moreAbout-artist a,
+.moreAbout-musicHistory a,
+.moreAbout-newMusic a,
+.moreAbout-musicNews a {
+    text-decoration: none;
+    color: #F67C00; /* You can choose your own color */
+    display: block;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* Change link color on hover */
+.moreAbout-artist a:hover,
+.moreAbout-musicHistory a:hover,
+.moreAbout-newMusic a:hover,
+.moreAbout-musicNews a:hover,
+#artists :hover {
+    color: white; /* Change to a slightly different color on hover */
+}
+
+/* Style the whole section */
+.Artist-of-Month {
+    display: flex; /* Use flex to make the divs appear side by side */
+    background-color: #F67C00;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+/* Style the left div */
+.Artist-of-Month > div:first-child {
+    flex: 1; /* Allow the left div to grow and fill available space */
+    padding-right: 20px; /* Add some spacing between the divs */
+}
+/* Style the right div */
+.Artist-of-Month > div:last-child {
+    flex: 1; /* Allow the right div to grow and fill available space */
+    padding-left: 20px; /* Add some spacing between the divs */
+}
+
+
+/* Style the heading "Artist of the Month" */
+.Artist-of-Month h2  {
+    font-size: 24px;
+    color: white; /* You can choose your own color */
+    text-align: center;
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin:0;
+}
+.Artist-of-Month h3  {
+    color: black; /* You can choose your own color */
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.Artist-of-Month h4 {
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: black; /* You can choose your own color */
+}
+/* Style the artist's image */
+.Artist-of-Month img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /*Add a subtle shadow */
+}
+.more-about-artist h4{
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: black; /* You can choose your own color */
+    text-align: center; 
+    padding-bottom: 10px;
+}
+/* Style the artist's description paragraphs */
+.Artist-of-Month p{
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    margin: 20px;
+}
+
+/* Style the whole section */
+#Music-History{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #F67C00;
+    border-radius: 10px;
+}
+/* Style the content container */
+.music-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+/* Style the heading "Music History and Culture" */
+#MusicHistory {
+    font-size: 20px;
+    color: #F67C00;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+/*Style paragraphs*/
+.music-content p {
+    line-height: 1.5;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+/* Style strong text for subheadings */
+.music-content strong {
+    line-height: 1.5;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F67C00;
+}
+/* Style the heading "Discover New Music" */
+#NewMusic {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Style the playlist container */
+.playlist {
+    padding: 20px;
+    margin: 20px;
+    background-color: #F67C00;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the playlist title */
+.playlist h4 {
+    color: black;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: black; /* You can choose your own color */
+    text-align: center; 
+    padding-bottom: 10px;
+}
+
+/* Style the playlist items */
+#playlist {
+    list-style: none;
+    padding: 20px;
+    line-height: 1.5;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#playlist li {
+    font-size: 16px;
+    color: black;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+/* Style the playlist items with alternating background colors */
+#playlist li:nth-child(odd) {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .information-heading h1 {
+        font-size: 24px;
+    }
+
+    .information-heading h2 {
+        font-size: 20px;
+    }
+
+    .more-about h2 {
+        font-size: 20px;
+    }
+
+    .more-about-container {
+        flex-direction: column;
+    }
+
+    .Artist-of-Month {
+        flex-direction: column;
+    }
+
+    .Artist-of-Month > div {
+        padding: 0;
+        text-align: center;
+    }
+
+    .Artist-of-Month img {
+        margin: 20px auto;
+    }
+
+    #Music-History {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .music-content p {
+        font-size: 14px;
+    }
+
+    #playlist h4 {
+        font-size: 16px;
+    }
+
+    #playlist li {
+        font-size: 14px;
+    }
+}
+
+

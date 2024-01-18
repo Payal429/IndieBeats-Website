@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/gallery.css" type="text/css">
+    <!--External Links-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--Embedded CSS Styling-->
+    <style>
+        /* Apply smooth scrolling to the entire document */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Styling for a container holding artist information */
+        .artist-container {
+            max-width: 1984px; /* Set maximum width */
+            padding: 0 16px; /* Adjusted padding from 1rem to 16px */
+            margin: 0 auto; /* Center the container horizontally */
+            color:white;
+            text-align: center;
+        }
+        .artist-container p{
+            text-align: center;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        /* Styling for section headings */
+        .section-subheading {
+            font-size: 20px; /* Set font size */
+            padding: 5px 0; /* Add padding above and below */
+            color:#FF3179;
+            font-family: Bungee;
+            font-weight: normal;
+            font-size: 24px;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+        .section-heading {
+            font-size: 20px; /* Set font size */
+            padding: 5px 0; /* Add padding above and below */
+            color:white;
+            font-family: Bungee;
+            font-weight: normal;
+            font-size: 30px;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+        .about-IndieBeat{
+            padding: 10px;
+            color: white;
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        /* Styling for an element with the ID "artist" */
+        #artist-section {
+            padding: 64px 0; /* Add padding above and below */
+        }
+        /* Styling for an element with the class "artist-slider" */
+        #artist-section .artist-slider {
+            height: 650px; /* Set height */
+            padding: 20px 0; /* Add padding above and below */
+            position: relative;
+        }
+        /* Styling for individual artist slides */
+        .artist-slide {
+            width: 500px; /* Set width */
+            height: 550px; /* Set height */
+            position: relative;
+        }
+        /* Styling for images within artist slides */
+        .artist-slide .artist-slide-img img {
+            width: 500px; /* Set width */
+            height: 550px; /* Set height */
+            border-radius: 32px; /* Add rounded corners */
+            object-fit: cover; /* Ensure image covers the container */
+        }
+        /* Styling for content within artist slides */
+        .artist-slide .artist-slide-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        /* Styling for artist slide content */
+        .artist-slide-content {
+            position: absolute;
+            top: 32px; /* Set top margin */
+            right: 32px; /* Set right margin */
+            color: var(--white); /* Set text color to a custom variable */
+        }
+        /* Styling for content at the bottom of artist slides */
+        .artist-slide-content .artist-slide-content-bottom {
+            position: absolute;
+            bottom: 10px; /* Set bottom margin */
+            left: 32px; /* Set left margin */
+            color: var(--white); /* Set text color to a custom variable */
+        }
+        .artist-name{
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            text-align: left;
+        }
+        /* Styling for a group of elements with the class "artist-followers" */
+        .artist-followers {
+            padding-top: 5px; /* Add padding above */
+            display: flex; /* Display elements in a row */
+            gap: 16px; /* Set spacing between elements */
+        }
+        /* Remove shadow styles for swiper slides */
+        .swiper-slide-shadow-left,
+        .swiper-slide-shadow-right {
+            display: none; /* Hide shadow elements */
+        }
+        /* Styling for controls of the artist slider */
+        .artist-slider-control {
+            position: relative;
+            bottom: 32px; /* Set bottom margin */
+            display: flex; /* Display elements in a row */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+        }
+        /* Styling for the next slide button in the artist slider */
+        .artist-slider-control .swiper-button-next {
+            left: 58% !important; /* Adjust horizontal position */
+            transform: translateX(-58%) !important; /* Adjust horizontal position */
+        }
+        /* Styling for the slider arrow */
+        .artist-slider-control .slider-arrow {
+            background: var(--white); /* Set background color */
+            width: 56px; /* Set width */
+            height: 56px; /* Set height */
+            border-radius: 50%; /* Make it a circle */
+            left: 42%; /* Adjust horizontal position */
+            transform: translateX(-42%); /* Adjust horizontal position */
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)); /* Add shadow */
+        }
+        /* Styling for icons within the slider arrow */
+        .artist-slider-control .slider-arrow ion-icon {
+            font-size: 40px; /* Set icon size */
+            color: white; /* Set icon color */
+        }
+        /* Add an empty pseudo-element after the slider arrow */
+        .artist-slider-control .slider-arrow::after {
+            content: '';
+        }
+        /* Styling for pagination controls within the artist slider */
+        .artist-slider-control .swiper-pagination {
+            position: relative;
+            width: 240px; /* Set width */
+            bottom: 10px; /* Set bottom margin */
+        }
+        /* Styling for individual pagination bullets */
+        .artist-slider-control .swiper-pagination .swiper-pagination-bullet {
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)); /* Add shadow */
+        }
+        .swiper-pagination-bullet{
+            background-color: white;
+        }
+        /* Styling for the active pagination bullet */
+        .artist-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+            background-color: white; /* Set background color for active bullet */
+        }
+
+
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .artist-name {
+        font-size: 18px; /* Decrease font size for smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .artist-followers {
+        padding-top: 10px; /* Increase padding for smaller screens */
+        justify-content: center; /* Center elements horizontally on smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    /* Remove shadow styles for swiper slides */
+    .swiper-slide-shadow-left,
+    .swiper-slide-shadow-right {
+        display: none; /* Hide shadow elements */
+    }
+
+    /* Styling for controls of the artist slider */
+    .artist-slider-control {
+        position: relative;
+        bottom: 40px; /* Set bottom margin */
+        display: flex; /* Display elements in a row */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+    }
+
+    /* Styling for the next slide button in the artist slider */
+    .artist-slider-control .swiper-button-next {
+        left: 58% !important; /* Adjust horizontal position */
+        transform: translateX(-58%) !important; /* Adjust horizontal position */
+    }
+
+    /* Styling for the slider arrow */
+    .artist-slider-control .slider-arrow {
+        background: var(--white); /* Set background color */
+        width: 56px; /* Set width */
+        height: 56px; /* Set height */
+        border-radius: 50%; /* Make it a circle */
+        left: 42%; /* Adjust horizontal position */
+        transform: translateX(-42%); /* Adjust horizontal position */
+        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)); /* Add shadow */
+    }
+
+    /* Styling for icons within the slider arrow */
+    .artist-slider-control .slider-arrow ion-icon {
+        font-size: 40px; /* Set icon size */
+        color: white; /* Set icon color */
+    }
+
+    /* Add an empty pseudo-element after the slider arrow */
+    .artist-slider-control .slider-arrow::after {
+        content: '';
+    }
+
+    /* Styling for pagination controls within the artist slider */
+    .artist-slider-control .swiper-pagination {
+        position: relative;
+        width: 240px; /* Set width */
+    }
+
+    /* Styling for individual pagination bullets */
+    .artist-slider-control .swiper-pagination .swiper-pagination-bullet {
+        filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1)); /* Add shadow */
+    }
+
+    .swiper-pagination-bullet{
+        background-color: white;
+    }
+
+    /* Styling for the active pagination bullet */
+    .artist-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+        background-color: white; /* Set background color for active bullet */
+    }
+}
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Header Section-->   
+        <div class="gallery-heading">
+            <h2>Gallery</h2>
+            <p>
+                Welcome to the IndieBeat Music Gallery, where we celebrate the vibrant and diverse world of indie music. 
+                Dive into a visual journey through captivating album covers, artist portraits, and behind-the-scenes snapshots 
+                that showcase the essence of indie music culture. Explore the unique artistry, emotions, and stories that make 
+                indie music a genre like no other.
+            </p>
+        </div>
+        <!----------------------------------------------------------->
+
+        <!--Gallery Section-->
+        <section class="Gallery-Section">
+            <div class="gallery-slideshow">
+                <div class="box one" style="--img:url(../Assets/Images/Events.jpg);"><a href="../Subpages/events.html">Event Highlights</a></div>
+                <div class="box two" style="--img:url(../Assets/Images/Genres.jpg);" ><a href="../Subpages/genres.html">Music Genres</a></div>
+                <div class="box three" style="--img:url(../Assets/Images/awards.jpg);"><a href="../Subpages/awards.html">Awards &amp; recognition</a></div>
+                <div class="box four" style="--img:url(../Assets/Images/social-media.avif);"><a href="../Subpages/social.html">Social Media</a></div>
+                <div class="box five" style="--img:url(../Assets/Images/albums2.jpg);"><a href="../Subpages/albums.html">Albums</a></div>
+            </div>
+        </section>
+        <!--------------------------------------------------------------->
+        
+        <!--https://www.sacnilk.com/entertainmenttopbar/Most_Popular_Singer_In_India?hl=en-->
+
+        <!--Artist Section-->
+        <section id="artist-section">
+            <div class="artist-container">
+            <h2 class="text-center section-subheading">-Indian Independent Singers-</h2>
+            <h1 class="text-center section-heading">Featured Artists</h1>
+            <p>
+                IndieBeat regularly features a curated selection of indie musicians, both emerging and established, in our gallery. 
+                Explore their work and learn more about the artists who define the indie music landscape.
+            </p>
+            </div>
+    
+            <div class="artist-container">
+                <div class="swiper artist-slider"> 
+                    <div class="swiper-wrapper">
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Darshan.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/darshan.html">Darshan Raval</a>
+                                <h3 class="artist-followers"><span>16.7M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Jonita.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/jonita.html">Jonita Gandhi</a>
+                                <h3 class="artist-followers"><span>3M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- Slide-end -->                    
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/ArjunKanungo.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom">
+                                <a class="artist-name" href="../Artists/arjun.html">Arjun Kanungo</a>
+                                <h3 class="artist-followers"><span>2M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Zaeden.jpg" alt="Artist">
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom">
+                                <a class="artist-name" href="../Artists/zaeden.html">Zaeden</a>
+                                <h3 class="artist-followers"><span>357K Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/King.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/king.html">King</a>
+                                <h3 class="artist-followers"><span>3M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Armaan.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/armaan.html">Armaan Malik</a>
+                                <h3 class="artist-followers"><span>14.3M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Akull.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/akull.html">Akull</a>
+                                <h3 class="artist-followers"><span>283K Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                         <!-- Slide-start -->
+                         <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Mitraz.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/mitraz.html">Mitraz</a>
+                                <h3 class="artist-followers"><span>140K Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Kshmr.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/kshmr.html">Kshmr</a>
+                                <h3 class="artist-followers"><span>1.6M Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end --> 
+                        <!-- Slide-start -->
+                        <div class="swiper-slide artist-slide"> 
+                            <div class="artist-slide-img">
+                                <img src="../Assets/Images/Lisa.jpg" alt="Artist"> 
+                            </div>
+                            <div class="artist-slide-content">
+                                <div class="artist-slide-content-bottom"> 
+                                <a class="artist-name" href="../Artists/lisa.html">Lisa Mishra</a>
+                                <h3 class="artist-followers"><span>462K Followers</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide-end -->                      
+                    </div> 
+                    <!--Buttons to move slider-->
+                    <div class="artist-slider-control"> 
+                        <div class="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------>
+    </main>
+    
+    <!--JavaScript Code for the Artist Slider-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var ArtistSlider = new Swiper('.artist-slider', { 
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+        });
+    </script>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <!----------------------------------------------------------->
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                    <p>Content Updated in September</p>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+        </div>
+    </footer>
+    <!----------------------------------------------------------->
+</body>
+</html>

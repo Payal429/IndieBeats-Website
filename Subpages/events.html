@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+    /* Style the main content */
+    .Events-Welcome h1{
+        /* Explore section title styling */
+        padding-top: 15px;
+        text-align: center;
+        color: #B14EB2;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+    .Events-Welcome p{
+        text-align: center;
+        color: white;
+        padding-bottom: 20px;
+        font-family: Roboto;
+        font-size: 16px; 
+        margin: 2%;
+    }
+
+    /* Style the artists gallery */
+    .artists-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    /* Style the artist cards */
+    .artist {
+        border: 5px solid #B14EB2;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+        background-color: white;
+    }
+
+    /* Style the artist images */
+    .artist img {
+        width: 70%;
+        max-width: 400px;
+        height: auto;
+        border: 3px solid #10B4BD;
+    }
+
+    /* Style artist names and event descriptions */
+    .artist h2,
+    .event-description {
+        margin-top: 10px;
+    }
+    .events,
+    .event-description  {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        margin: 0;
+        font-family: Orbitron;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+    .artist h2{
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+    /* Style events */
+
+
+    /* Style event images */
+    .event img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .artists-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-gap: 20px;
+        }
+    }
+
+    /* Responsive layout for smaller screens */
+    @media screen and (max-width: 768px) {
+        .artists-gallery {
+            grid-template-columns: 1fr;
+        }
+    }
+    /*Sub Navbar*/
+    .Gallery-navbar {
+        background-color: black;
+        padding: 5px;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .Gallery-navbar ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        font-family: Orbitron;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+
+    .Gallery-navbar li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .Gallery-navbar a {
+        text-decoration: none;
+        color: #10B4BD;
+        font-weight: bold;
+    }
+
+    .Gallery-navbar a:hover {
+        color: #B14EB2;
+    }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <section>
+            <div class="Events-Welcome">
+                <h1>Welcome to the IndieBeat Music Events!</h1>
+                <p>
+                    Get ready to journey through time and immerse yourself in the magic of music history. Our Flashback Events and Concerts series is your time machine to relive iconic moments and legendary performances from the indie music archives.
+                    In this space, we rewind the clock to bring you the electric energy and timeless melodies that have shaped the indie music landscape. Whether it's a historic concert that defined a generation or an event that marked a pivotal moment in an artist's career, our Flashback Events and Concerts transport you to the heart of these unforgettable experiences.
+                    As we celebrate the past, we also honor the artists who have left an indelible mark on the indiebeat. Join us in revisiting the stage presence, the passion, and the musical genius that continue to inspire us today.
+                </p>
+                <p>
+                    Whether you were there to witness these moments firsthand or you're discovering them for the first time, our Flashback Events and Concerts are a reminder that music transcends time and connects generations. It's a testament to the enduring power of indie music.
+                    So, tune in, turn up the volume, and let the nostalgia wash over you. Welcome to IndieBeat Music's Flashback Events and Concerts—a place where the past and present converge, and where the indiebeat carries the echoes of history in every note.
+                </p>
+            </div>
+        </section>
+        <div class="Gallery-navbar">
+            <ul>
+                <li><a href="../Subpages/events.html">Events</a></li>
+                <li><a href="../Subpages/genres.html">Genres</a></li>
+                <li><a href="../Subpages/awards.html">Awards</a></li>
+                <li><a href="../Subpages/social.html">Social Media</a></li>
+                <li><a href="../Subpages/albums.html">Albums</a></li>
+                
+            </ul>
+        </div>
+
+        <!--Section-->
+        <section class="artists-gallery">
+            <div class="artist">
+                <img src="../Assets/Images/Darshan_Highlights.jpg" alt="Darshan Raval" width="200px" height="250px">
+                <h2>Darshan Raval</h2>
+                <p class="event-description">Date: September 17, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Darshan_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Darshan_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Darshan_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Jonita_Highlights.jpg" alt="Jonita Gandhi" width="200px" height="250px">
+                <h2>Jonita Gandhi</h2>
+                <p class="event-description">Date: February 22, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Jonita_event4.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Jonita_event5.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Jonita_event6.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Arjun_Highlights.jpg" alt="Arjun Kanungo" width="200px" height="250px">
+                <h2>Arjun Kanungo</h2>
+                <p class="event-description">Date: January 31, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Arjun_event4.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Arjun_event5.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Arjun_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Zaeden_Highlight.jpg" alt="Zaeden" width="200px" height="250px">
+                <h2>Zaeden</h2>
+                <p class="event-description">Date: August 6 March, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Zaeden_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Zaeden_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Zaeden_event4.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/King_Highlights.jpg" alt="King" width="200px" height="250px">
+                <h2>King</h2>
+                <p class="event-description">Date: April 14, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/King_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/King_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/King_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Armaan_Highlight.jpg" alt="Armaan Malik" width="200px" height="250px">
+                <h2>Armaan Malik</h2>
+                <p class="event-description">Date: April 9, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Armaan_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Armaan_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Armaan_event7.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Akull_Highlights.jpg" alt="Akull" width="200px" height="250px">
+                <h2>Akull</h2>
+                <p class="event-description">Date: July 11, 2020</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Akull_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Akull_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Akull_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Mitraz_event.jpg" alt="Mitraz" width="200px" height="250px">
+                <h2>Mitraz</h2>
+                <p class="event-description">Date: December 5, 2022</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Mitraz_event4.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Mitraz_event2.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Mitraz_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Kshmr_Highlights.jpg" alt="Kshmr" width="200px" height="250px">
+                <h2>Kshmr</h2>
+                <p class="event-description">Date: September 12, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Kshmr_event4.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/kshmr_event5.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Kshmr_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+            <div class="artist">
+                <img src="../Assets/Images/Lisa_Highlights.jpg" alt="Lisa Mishra" width="200px" height="250px">
+                <h2>Lisa Mishra</h2>
+                <p class="event-description">Date: January 21, 2023</p>
+                <div class="events">
+                    <h3>Events</h3>
+                    <div class="event">
+                        <img src="../Assets/Images/Lisa_event.jpg" alt="Event 1 Day">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Lisa_event5.jpg" alt="Event 1 Night">
+                    </div>
+                    <div class="event">
+                        <img src="../Assets/Images/Lisa_event3.jpg" alt="Event 1 Night">
+                    </div>
+                </div>
+            </div>
+                
+    
+               
+        </section>
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+   <!--Embedded CSS Styling-->
+   <style>
+        /* Explore section title styling */
+        .Album-Welcome h1 {
+            padding-top: 15px;
+            text-align: center;
+            color: #C3FD02;
+            text-transform: uppercase;
+            font-family: Bungee;
+            font-weight: normal;
+            letter-spacing: 5px;
+            font-size: 30px;
+        }
+
+        /* Paragraph style for album introduction */
+        .Album-Welcome p {
+            text-align: center;
+            color: white;
+            font-family: Roboto;
+            font-size: 16px;
+            padding: 5px;
+            margin: 2%;
+        }
+
+        /* Container for album gallery */
+        .album-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Style for individual albums */
+        .album {
+            width: 900px;
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid #C3FD02;
+            text-align: center;
+            background-color: white;
+        }
+
+        /* Style for album images */
+        .album img {
+            max-width: 100%;
+            border: 3px solid #F67C00;
+        }
+
+        /* Style for album titles */
+        .album h2 {
+            color: black;
+            text-align: center;
+            align-items: center;
+            font-family: Bungee;
+            font-weight: lighter;
+            letter-spacing: 5px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        /* Style for album release dates */
+        .album h4 {
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+            color: #F67C00;
+        }
+
+        /* Style for album descriptions */
+        .album-description {
+            color: rgba(0, 0, 0, 0.873);
+            text-align: justify;
+            padding-bottom: 20px;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style for the song list */
+        .song-list {
+            list-style-type: square;
+            padding: 10px;
+            line-height: 1.5;
+            text-align: left;
+            color: black;
+            padding-bottom: 20px;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style for individual songs in the list */
+        .song-list li {
+            margin: 5px 0;
+        }
+
+        /* Sub Navbar for album categories */
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        /* Style for sub navbar lists */
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Style for sub navbar list items */
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Style for sub navbar links */
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        /* Hover effect for sub navbar links */
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media screen and (max-width: 768px) {
+            .album {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+    <section>
+        <!-- Welcome section for album spotlight -->
+        <div class="Album-Welcome">
+        <h1>Welcome to the IndieBeat Music Album Spotlight!</h1>
+        <p>
+            Prepare to embark on an immersive musical journey as we delve deep into the heart and soul of some of the most compelling and groundbreaking albums in the indie music scene. Our Album Spotlight series is your gateway to exploring entire musical worlds, each crafted with passion, creativity, and a unique sonic identity.
+            In the ever-expansive universe of indie music, albums are not just collections of songs; they are stories, emotions, and artistic visions brought to life. Each album we feature has its own narrative, a tapestry of sounds, and a distinctive voice that reflects the artist's journey.
+        </p>
+        <p>
+            Our mission is to introduce you to albums that transcend the ordinary, taking you on a sonic adventure that resonates long after the final note. Whether you're a seasoned indie music aficionado or a curious newcomer, our Album Spotlight is your guide to discovering the albums that are shaping the landscape of independent music.
+        </p>        
+        </div>
+    </section>
+     <!-- Sub navigation bar for various sections -->
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Subpages/events.html">Events</a></li>
+            <li><a href="../Subpages/genres.html">Genres</a></li>
+            <li><a href="../Subpages/awards.html">Awards</a></li>
+            <li><a href="../Subpages/social.html">Social Media</a></li>
+            <li><a href="../Subpages/albums.html">Albums</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="album-gallery">
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/dard.jpeg" alt="Album 1">
+            <h2>Dard 2.0</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Dard is a collection of soulful and heart-wrenching songs that explore the universal themes of love, loss, and pain. The album showcases 
+                Darshan Raval's versatility as a singer and songwriter, with songs ranging from melancholic ballads to upbeat pop tracks.The album's opening 
+                track, Mahiye Jinna Sohna, is a beautiful and romantic song about the longing for a loved one. The song's catchy melody and Darshan's soulful 
+                vocals have made it a huge hit among fans. Another popular track on the album is Lo Aayi Barsaat, a soulful ballad about the pain of separation.
+            </p>
+            <h4>Album Songs</h4>
+              <!-- List of songs in the album -->
+            <ul class="song-list">
+                <li>Mahiye Jinna Sohna - Darshan Raval</li>
+                <li>Lo Aayi Barsaat - Darshan Raval</li>
+                <li>Haaye Dard - Darshan Raval</li>
+                <li>Jaane De - Darshan Raval</li>
+                <li>Faasla - Darshan Raval, Shirley Setia</li>
+                <li>Saahiba - Darshan Raval</li>
+                <li>Mannat - Darshan Raval, Prakriti Kakar</li>
+                <li>Ho Nai Sakda - Darshan Raval</li>
+                <li>Mahiye Jinna Sohna Unplugged - Darshan Raval</li>
+            </ul>
+        </div>
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/Judaiyaan.jpg" alt="Album 2">
+            <h2>Judaiyaan</h2>
+             <!-- Album description -->
+            <p class="album-description">
+                Judaiyaan is a collection of soulful and heart-wrenching songs that explore the universal themes of love, loss, and pain. The album showcases 
+                Darshan Raval's versatility as a singer and songwriter, with songs ranging from melancholic ballads to upbeat pop tracks. The album's opening track, 
+                Judaiyaan (Title Track), is a beautiful and romantic song about the longing for a loved one. The song's catchy melody and Raval's soulful vocals 
+                have made it a huge hit among fans. Another popular track on the album is Mujhe Peene Do, a soulful ballad about the pain of separation. Judaiyaan also 
+                features several other noteworthy tracks, such as Main Kisi Aur Ka, Barsaat and Maa. Each song on the album is unique and special in its own way, and 
+                Darshan Raval's heartfelt vocals and poignant lyrics make the album an unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+              <!-- List of songs in the album -->
+            <ul class="song-list">
+                <li>Judaiyaan - Darshan Raval, Shreya Ghoshal</li>
+                <li>Barsaat - Darshan Raval</li>
+                <li>Main Kisi Aur Ka - Darshan Raval</li>
+                <li>Mujhe Peene Do - Darshan Raval</li>
+                <li>Maa - Darshan Raval</li>
+                <li>Judaiyaan Reprise - Darshan Raval</li>
+            </ul>
+        </div>
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/industry2.jpg" alt="Album 2">
+            <h2>Industry 2</h2>
+             <!-- Album description -->
+            <p class="album-description">
+                Industry 2 is a diverse and eclectic album that showcases Arjun Kanungo's versatility as a musician. The album features a mix of pop, rock, 
+                and electronic influences, with each song offering a unique and refreshing sound.The album's opening track, India to Japan, is a high-energy pop 
+                song with a catchy melody and infectious beats. The song features Japanese rapper Cyber Rui and vocals from IP Singh and Yash Vaid, and it is a 
+                perfect example of Arjun Kanungo's global sound. Industry 2 also features several other notable tracks, such as Kehno Ko Kya Raha, Kismat, 
+                and Sach Bata Mujhe. Each song on the album is unique and special in its own way, and Arjun Kanungo's heartfelt vocals and poignant lyrics make the 
+                album an unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+            <!-- List of songs in the album -->
+            <ul class="song-list">
+                <li>India to Japan - Arjun Kanungo, Shirley Setia, Cyber Rui</li>
+                <li>Sach Bata Mujhe - Arjun Kanungo, Shirley Setia </li>
+                <li>Danger - Arjun Kanungo</li>
+                <li>Kismat - Arjun Kanungo</li>
+                <li>Kismat (Extended Version) - Arjun Kanungo</li>
+                <li>Kehne Ko Kya Raha - Arjun Kanungo, Nemo</li>
+                <li>Tu Hain - Arjun Kanungo, Zaeden</li>
+                <li>Destiny</li>
+            </ul>
+        </div>
+        
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/industryalbum.jpeg" alt="Album 2">
+            <h2>Industry</h2>
+             <!-- Album description -->
+            <p class="album-description">
+                ndustry is a collection of diverse and eclectic songs that showcase Arjun Kanungo's versatility as a musician. The album features a 
+                mix of pop, rock, and electronic influences, with each song offering a unique and refreshing sound. The standout track on the album  
+                'Everything Sucks', a Hindi rendition of the popular international hit by Vaultboy. The song is a powerful and emotional ballad about 
+                heartbreak and loss, and Arjun Kanungo's vocals are truly mesmerizing. Each song on the album is unique and special in its own way, 
+                and Arjun Kanungo's heartfelt vocals and poignant lyrics make the album an unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+            <!-- List of songs in the album -->
+            <ul class="song-list">
+                <li>Ilzaam - Arjun Kanungo, King</li>
+                <li>Bura Sapna - Arjun Kanungo</li>
+                <li>Barsaat - Arjun Kanungo</li>
+                <li>Wapas Aa Jao - Arjun Kanungo, Yash Vaid</li>
+                <li>Foto - Arjun Kanungo, Rashmeet Kaur</li>
+                <li>Ishq Samundar - Arjun Kanungo, King</li>
+                <li>Everything Sucks - Arjun Kanungo, Vaultboy</li>
+            </ul>
+        </div>
+         <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/armaan.jpeg" alt="Album 2">
+            <h2>Armaan</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Armaan is a collection of pop songs with a mix of Indian and Western influences. The album showcases Armaan Malik's versatile vocals and his 
+                ability to sing a variety of genres. The album's opening track, Krazy Konnection, is a high-energy pop song with a catchy melody and infectious 
+                beats. The song features a rap verse by Salim Merchant, and it is a perfect example of Armaan Malik's youthful energy and exuberance. Another standout 
+                track on the album is Tu Hi Hai, a romantic ballad with a beautiful melody and Armaan Malik's soulful vocals. The song is a simple yet effective declaration 
+                of love, and it is sure to resonate with listeners of all ages.Armaan also features several other notable tracks, such as Bas Is Pal, Leja Zakh M Tere, 
+                and Roke Na Koi. Each song on the album is unique and special in its own way, and Armaan Malik's heartfelt vocals and poignant lyrics make the album an 
+                unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Krazy Konnection - Armaan Malik, Salim Merchant</li>
+                <li>Bas Is Pal Mein - Armaan Malik</li>
+                <li>What Love Is - Armaan Malik</li>
+                <li>Kyon - Armaan Malik</li>
+                <li>Tu Hi Hai - Armaan Malik</li>
+                <li>Roke Na Koi - Armaan Malik</li>
+                <li>Le Ja Zakhm Tere - Armaan Malik</li>
+                <li>Krazy Konnection (Dubstep Mix) - Armaan Malik, Salim Merchant</li>
+            </ul>
+        </div>
+        
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/theCarnival.jpeg" alt="Album 2">
+            <h2>The Carnival</h2>
+             <!-- Album description -->
+            <p class="album-description">
+                The Carnival album by King Racco is a collection of upbeat and festive songs that are perfect for any occasion. 
+                The album features a variety of genres, including pop, hip hop, and electronic music, and it is sure to get you moving and dancing.
+                In the album, every song has its own stories, expresses his deep feelings about love, life, and gives motivation to us. If you really 
+                love someone or really want to do something big in life, you will definitely relate/feels all his songs.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                 <!-- List of songs in the album -->
+                <li>She Don't Give A - King</li>
+                <li>Thoda Samjha Karo - King</li>
+                <li>Dracula - King</li>
+                <li>90s - King</li>
+                <li>MAFIIA - King</li>
+                <li>Let The Eyes Talk - King</li>
+                <li>IICONIC - King</li>
+                <li>Tu Aake Dekhle - King</li>
+            </ul>
+        </div>
+
+         <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/theGorillaBounce.jpeg" alt="Album 2">
+            <h2>The Gorilla Bounce</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                The Gorilla Bounce album by King Racco is a collection of energetic and upbeat songs that are sure to get you moving and grooving. 
+                The album features a mix of pop, hip hop, and electronic music, with each song offering a unique and exciting sound. The standout 
+                track on the album is Blanko, a pop track with a catchy melody and playful lyrics. The Gorilla Bounce is a refreshing and unique 
+                take on the Indian music scene. King Racco's music is a blend of traditional and modern elements, and his lyrics are both relatable 
+                and thought-provoking. The album is sure to leave a lasting impression on listeners, and it is a must-have for any fan of Indian music.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>PICASSO - King</li>
+                <li>BLANKO - King</li>
+                <li>SALOOT - King</li>
+                <li>Godfather - King</li>
+                <li>Casanova - King, Rahul Sathu</li>
+                <li>Desi Dan Bilzerian - King</li>
+                <li>Koo Koo - King, Aesap, Jaz</li>
+                <li>Shaamein - King, Harjas Harjaayi</li>
+                <li>Main Bas Kehti Nahi - King</li>
+                <li>Era - King</li>
+                <li>Tera Hua Na Mai Kabhi - King, High-Born</li>
+            </ul>
+        </div>
+        
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/champageTalk.jpeg" alt="Album 2">
+            <h2>Champagne Talk</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Champagne Talk album by King Racoo is a collection of smooth and sophisticated R&B songs that are perfect for a night out on the town. The album 
+                features a mix of original tracks and covers of classic R&B songs, and it is sure to get you moving and grooving. The album's opening track, Champagne Talk 
+                (Title Track), is a smooth and seductive R&B song with a catchy melody and King Racco's sultry vocals. The song is the perfect introduction to the album, 
+                and it sets the tone for a night of fun and excitement.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Na Ja Yu - King</li>
+                <li>OOPS - King</li>
+                <li>Broken Dreams - King</li>
+                <li>Maan Meri Jaan - King</li>
+                <li>Dejalo - King</li>
+                <li>Pablo - King</li>
+                <li>Champagne Talk - King</li>
+                <li>Me &amp; Me - King</li>
+            </ul>
+        </div>
+
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/HarmonicaAndromeda.jpg" alt="Album 2">
+            <h2>Harmonica Andromeda</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Harmonica Andromeda is a collection of electronic dance music tracks that showcase KSHMR's diverse sound. The album features a mix of genres, 
+                including big room house, progressive house, trap, and electro house. The album's opening track, Harmonica Andromeda (Title Track), is a high-energy 
+                big room house track with a catchy melody and infectious beats. The song features a haunting vocal sample that adds to the track's atmosphere. Another standout 
+                track on the album is Song of War, a collaboration with Dutch DJ and producer Dimitri Vegas & Like Mike. The song is a powerful and aggressive trap track with a 
+                heavy bassline and catchy vocals.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Harmonica Andromeda - Kshmr</li>
+                <li>Midnight Lion Walk - Kshmr</li>
+                <li>Blood in The Water - Kshmr</li>
+                <li>The World We Left Behind - Kshmr, Karra</li>
+                <li>Dusty Fairytale - Kshmr</li>
+                <li>Gypsy Waltz - Kshmr</li>
+                <li>Mystical Beginning - Kshmr, Karra</li>
+                <li>Around the World - Kshmr, Noumenn</li>
+                <li>Slow - Kshmr, Mahmut Orhan, Karra</li>
+                <li>Tupinambá - Kshmr</li>
+                <li>You Don't Need to Ask - Kshmr, Tzar</li>
+                <li>Storm (Interlude)</li>
+                <li>Song Of War - Kshmr</li>
+                <li>Peace (Interlude)</li>
+                <li>I Will Be a Lion - Kshmr, Jake Reese</li>
+                <li>Wings (Interlude) - Kshmr</li>
+                <li>The Littel Voice - Kshmr</li>
+                <li>Come To Life - Kshmr</li>
+                <li>Paula - Kshmr</li>
+            </ul>
+        </div>
+
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/genesis.jpg" alt="Album 2">
+            <h2>Genesis 1:1</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Genesis 1:1 is a collection of intimate and introspective songs that explore the themes of love, loss, and self-discovery. The album showcases Zaeden's versatility 
+                as a songwriter and singer, with songs ranging from melancholic ballads to upbeat pop tracks. The album's opening track, Kya Karoo?, is a beautiful and romantic song 
+                about the longing for a loved one. The song's catchy melody and Zaeden's soulful vocals have made it a huge hit among fans. The album title Genesis 1:1 is a reference 
+                to the first verse of the Bible, which states, "In the beginning, God created the heavens and the earth." Zaeden has said that he chose this title because it represents 
+                his journey as a musician and his desire to create something new and original.
+            </p>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Genesis (Intro) - Zaeden</li>
+                <li>Sochna Na Tha - Zaeden</li>
+                <li>Jaaye Na Tu - Zaeden, Nishu</li>
+                <li>KTMBK - Zaeden, Hanita Bhambri</li>
+                <li>Intezaar - Zaeden, Somanshu</li>
+                <li>Dooriyan - Zaeden</li>
+                <li>Kho Gaya - Zaeden, Yashraj, Aakash</li>
+                <li>Yaadein - Zaeden, Aakash</li>
+                <li>1000 Pieces - Zaeden, Polar</li>
+                <li>Kya Karoon - Zaeden</li>
+                <li>Days - Zaeden</li>
+            </ul>
+        </div>
+
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/zehen.jpeg" alt="Album 2">
+            <h2>Zehen</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Zehen is the debut studio album by Indian singer-songwriter Mitraz. It was released on November 17, 2022, by Indie Music Label. 
+                The album contains seven tracks, all of which were composed and written by Mitraz himself. Zehen is a collection of soulful and 
+                romantic songs that explore the universal themes of love, longing, and desire. The album showcases Mitraz's versatility as a singer 
+                and songwriter, with songs ranging from melancholic ballads to upbeat pop tracks
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Baatein - Mitraz</li>
+                <li>Khayaal - Mitraz</li>
+                <li>Zehen - Mitraz</li>
+                <li>Mulakaat - Mitraz</li>
+                <li>Filhaal - Mitraz</li>
+                <li>Gulaab - Mitraz</li>
+                <li>Mehboob - Mitraz</li>
+            </ul>
+        </div>
+
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/fourzero.jpg" alt="Album 2">
+            <h2>Four-Zero</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Four-Zero is the debut EP by Indian singer-songwriter Mitraz. It was released on April 24, 2020, by Indie Music Label. 
+                The EP contains four tracks, all of which were composed and written by Mitraz himself. Four-Zero is a collection of soulful 
+                and romantic songs that explore the universal themes of love, loss, and pain. The EP showcases Mitraz's versatility as a singer 
+                and songwriter, with songs ranging from melancholic ballads to upbeat pop tracks.The EP's opening track, Tera Jadu, is a beautiful 
+                and romantic song about the longing for a loved one. The song's catchy melody and Mitraz's soulful vocals have made it a huge hit 
+                among fans. Another popular track on the EP is Parchai, a soulful ballad about the pain of separation. Four-Zero also features two other 
+                noteworthy tracks, Panah and Safar. Each song on the EP is unique and special in its own way, and Mitraz's heartfelt vocals and poignant 
+                lyrics make the EP an unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Tera Jadu - Mitraz</li>
+                <li>Parchai - Mitraz</li>
+                <li>Panah - Mitraz</li>
+                <li>Safar - Mitraz</li>
+            </ul>
+        </div>
+
+        <!-- Individual album sections -->
+        <div class="album">
+            <img src="../Assets/Images/loveRoses.jpeg" alt="Album 2">
+            <h2>Love/Roses</h2>
+            <!-- Album description -->
+            <p class="album-description">
+                Love/Roses is a collection of soulful and romantic songs that explore the universal themes of love, longing, and desire. 
+                The album showcases Mitraz's versatility as a singer and songwriter, with songs ranging from melancholic ballads to upbeat pop tracks.The album's opening 
+                track, Kyu Yaadon Mein, is a beautiful and romantic song about the longing for a loved one. The song's catchy melody and Mitraz's soulful vocals have made 
+                it a huge hit among fans. Love/Roses also features several other noteworthy tracks, such as Pass Tere, Jo Tu Banke, and Dil Khojega. Each song on the album 
+                is unique and special in its own way, and Mitraz's heartfelt vocals and poignant lyrics make the album an unforgettable experience for listeners.
+            </p>
+            <h4>Album Songs</h4>
+            <ul class="song-list">
+                <!-- List of songs in the album -->
+                <li>Kyu Yaadon Mein - Mitraz</li>
+                <li>Maafi Ke Kaabil - Mitraz</li>
+                <li>Khwaab Mere - Mitraz</li>
+                <li>Dil Khojega - Mitraz</li>
+                <li>Paas Tere - Mitraz</li>
+                <li>Fir Ek Baar - Mitraz</li>
+                <li>Jo Tu Banke - Mitraz</li>
+                <li>Saathi Har Pal Ka - Mitraz</li>
+                <li>Worthy - Mitraz</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

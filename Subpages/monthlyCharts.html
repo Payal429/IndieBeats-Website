@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+    /* Default styles for the chart container */
+    .chart {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        color: white;
+    }
+
+    /* Styles for the monthly song charts heading */
+    .monthly-song-charts h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Bungee', sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    /* Styles for the monthly song charts description */
+    .monthly-song-charts p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0;
+        color: white;
+        text-align: center;
+    }
+
+    /* Styles for chart titles */
+    .chart h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        font-family: 'Bungee', sans-serif;
+        font-weight: normal;
+        letter-spacing: 5px;
+    }
+
+    /* Styles for the song chart list */
+    .chart ol {
+        list-style: none;
+        padding: 10px;
+        max-height: 600px; /* Responsive max height for the playlist */
+        overflow-y: scroll; /* Enable vertical scrolling if necessary */
+    }
+
+    /* Styles for individual songs in the chart */
+    .chart li {
+        margin-bottom: 20px;
+    }
+
+    /* Styles for song details */
+    .chart p {
+        padding: 5px;
+    }
+
+    /* Styles for each song entry */
+    .song {
+        border: 2px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex; /* Enable flex layout */
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* Styles for song images */
+    .song img {
+        max-width: 300px;
+        height: auto;
+        margin-right: 20px; /* Add spacing between the image and text */
+    }
+
+    /* Styles for song titles */
+    .song h3 {
+        text-align: left;
+        padding: 10px;
+        margin: 0;
+        font-family: 'Orbitron', sans-serif;
+        font-weight: normal;
+        letter-spacing: 2px;
+        font-size: 18px;
+    }
+
+    /* Styles for song descriptions */
+    .song p {
+        font-family: 'Roboto', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        margin: 0;
+        color: white;
+    }
+
+    /* Responsive styles for screens with a maximum width of 768px */
+    @media screen and (max-width: 768px) {
+        .chart h2 {
+            font-size: 20px; /* Adjust chart title font size for smaller screens */
+        }
+
+        .chart ol {
+            max-height: 400px; /* Reduce max height for playlist on smaller screens */
+        }
+
+        .song img {
+            max-width: 200px; /* Reduce image size for smaller screens */
+        }
+
+        .song h3 {
+            font-size: 16px; /* Adjust song title font size for smaller screens */
+        }
+
+        .song p {
+            font-size: 14px; /* Adjust song description font size for smaller screens */
+        }
+    }
+
+</style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <section>
+        <div class="monthly-song-charts">
+            <h1>Welcome to IndieBeat's Top Monthly Songs!</h1>
+            <p>
+                Our Monthly Top Songs feature is your ultimate destination for discovering the tracks that are making waves, igniting passions, 
+                and setting the indie scene on fire. We believe that music is more than just notes and rhythms; it's an expression of the human experience, 
+                and our Monthly Top Songs are a reflection of that diversity.
+            </p>
+            <br>
+            <p>
+                Each month, we carefully curate a playlist that showcases a dynamic mix of genres, emotions, and artistic visions. 
+                From indie rock anthems that'll get your heart pounding to introspective folk ballads that'll tug at your soul, our Top Songs 
+                selection is a sonic journey like no other.
+            </p>
+        </div>
+    </section>
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Section-->
+        <section class="chart">
+            <h2>Top Songs of the Month</h2>
+            <ol>
+                 <li>
+                    <div class="song">
+                        <img src="../Assets/Images/sahibaa.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Sahibaa</h3>
+                        <p>Artist: Darshan Raval and Antara Mitra </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/chadya.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Chadya</h3>
+                        <p>Artist: Mitraz</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/HowMany.jpg" alt="Song 2 Cover" width="300px" height="350px"> 
+                        <h3>How Many</h3>
+                        <p>Artist: Armaan Malik </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/HaayeDard.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Haaye Dard</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/chandni.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Chandni</h3>
+                        <p>Artist: Sachet-Parampara </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/JaaneDe.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Jaane De</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/crown.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Crown</h3>
+                        <p>Artist: King</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/MahiyeJinnaSohna.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Mahiye Jinna Sohna</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/saahiba.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Saahiba</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/Heeriye.jpg" alt="Song 1 Cover" width="300px" height="350px">
+                        <h3>Heeriye</h3>
+                        <p>Artist: Jasleen Royal, Arjit Singh</p>
+                    </div>
+                </li> 
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/HoNahiSakda.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Ho Nahi Sakda</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/ishqKaAsar.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Isqh Ka Asar</h3>
+                        <p>Artist: Stebin Ben</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/LoAayiBarsaat.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Lo Aayi Barsaat</h3>
+                        <p>Artist: Darshan Raval</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/whatJumka.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>What Jumka?</h3>
+                        <p>Artist: Jonita Gandhi</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/bye.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Bye</h3>
+                        <p>Artist: Aditya Bhardwaj </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/tabaahi.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Tabaahi</h3>
+                        <p>Artist: Armaan Malik, OAFF </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/maanMeriJaan.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Maan Meri Jaan</h3>
+                        <p>Artist: King</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/daffaHo.webp" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Daffa Ho</h3>
+                        <p>Artist: Akull</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/nasamajh.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Nasamajh</h3>
+                        <p>Artist: Aditya Rikhari</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/samjheNa.jpg" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Samjhe Na</h3>
+                        <p>Artist: Aditya Rikhari</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="song">
+                        <img src="../Assets/Images/dilawara.webp" alt="Song 2 Cover" width="300px" height="350px">
+                        <h3>Dilawara</h3>
+                        <p>Artist: The PropheC and Ezu </p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <!----------------------------------------------------------->
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+</html>

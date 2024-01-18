@@ -1,0 +1,280 @@
+/* Style for the current page link */
+#contact {
+    text-decoration: double underline;
+    text-decoration-skip-ink: none; /* Prevent the underline from extending into descenders */
+    padding-bottom: 5px; /* Adjust the padding to control the space between the text and the underline */
+    font-weight: bold;
+}
+
+/* Styles for the heading in the contact section */
+.contactUs-heading{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+.contactUs-heading h1{
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+.contactUs-heading h2{
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+.contactUs-heading p{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Overall layout styles for the ContactInformation-Section */
+.ContactInformation-Section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: black; /* Background color for the contact info section */
+    color: white;
+    padding: 20px;
+  }
+  
+/* Styles for the left side (Music Player) */
+.musicplayer-container {
+    justify-content: center;
+    text-align: center;
+    background-color: #c2fd02e6;
+    padding: 10px;
+    color: black;
+    border: 3px solid white;
+}
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.progress {
+    height: 100%;
+    background-color: #C3FD02;
+    border-radius: 5px;
+    width: 0;
+    align-items: center;
+    position: relative;
+}
+#progress-bar {
+    height: 100%;
+    width: 0;
+    position: absolute;
+}
+.duration {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    color: black;
+}
+.controls button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.controls button:hover{
+    color: #C3FD02;
+    background-color: black;
+}
+  
+/* Styles for the right side (Contact Information) */
+.contact-information-container {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+} 
+.contact-information-container h2{
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+.contact-information-container h3{
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    color:#C3FD02;
+}
+.contact-information-container p{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0;
+}
+.additional-information-container h3{
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    color:#C3FD02;
+}
+.additional-information-container p{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0;
+}
+.additional-information-container a{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0;
+    color: #C3FD02;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Styles for the Contact Information section */
+.general-inquiries,
+.contact-hours,
+.contact-socialMedia {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contact-socialMedia li {
+    display: inline-flex;
+    float: center;
+    text-decoration: none;    
+}
+.contact-socialMedia a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+} 
+
+/* Styles for the Additional Information Section */
+.Additional-Information-Section{
+    background-color: black;
+}
+.additional-information-container{
+    padding: 20px;
+}
+.address{
+    text-align: center;
+    color: white;
+}
+.feedback{
+    text-align: center;
+    color: white;
+}
+
+/* Styles for the Contact Form Section */
+.ContactForm-Section {
+    background-image: url('../Assets/Images/abstract_background_with_colourful_music_notes_design_2504.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+}
+.ContactForm-Section h2 {
+    text-transform: uppercase;
+    font-family: Bungee;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 24px;
+    margin: 0;
+    color: #C3FD02;
+    background-color: rgba(0, 0, 0, 0.743);
+    text-align: center;
+}
+.contact-form-container{
+    padding: 15px;
+}
+
+/* Styles for the contact form elements */
+.contact-form-container form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8); /*Add a semi-transparent white background to the form*/
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea{
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #C3FD02;
+    border-radius: 5px;
+}
+.form-group button{
+    background-color:#C3FD02;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-group button:hover{
+    background-color: black;
+    color: #C3FD02;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Contact Information Section */
+    .ContactInformation-Section {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center;
+    }
+
+    /* Left side (Music Player) */
+    .musicplayer-container {
+        border: none; /* Remove border on smaller screens */
+    }
+
+    /* Right side (Contact Information) */
+    .contact-information-container {
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* Additional Information Section */
+    .additional-information-container {
+        text-align: center;
+    }
+
+    /* Contact Form Section */
+    .ContactForm-Section {
+        background-color: black; /* Change background color for better contrast */
+    }
+}

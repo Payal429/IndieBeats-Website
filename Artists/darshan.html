@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/featuredPlaylist.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+ h1{
+        padding-top: 15px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 30px; 
+        }
+        #biography-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Center the content within the container */
+        /* Add more styles for your content here */
+        .artist-name h2 {
+        /* Explore section title styling */
+        padding-top: 15px;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-family: Bungee;
+        font-weight: normal;
+        letter-spacing: 5px;
+        font-size: 24px;
+        }
+
+        .artist-name h3 {
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 18px;
+        } 
+            
+        .bio-image {
+            border-radius: 10%;
+            margin: 20px auto;
+            display: block; /* To center the image */
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+        }
+        
+        .artist-bio p {
+            margin-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+        }
+
+        /* Style the section titles */
+        h4 {
+            text-align: left;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        /* Style the paragraphs */
+        p {
+            text-align: justify;
+            color: black;
+            font-family: Roboto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /*Sub Navbar*/
+        .Gallery-navbar {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .Gallery-navbar ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+            font-family: Orbitron;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 16px;
+        }
+
+        .Gallery-navbar li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .Gallery-navbar a {
+            text-decoration: none;
+            color: #F67C00;
+            font-weight: bold;
+        }
+
+        .Gallery-navbar a:hover {
+            color: #C3FD02;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    <header>
+        <h1>Biography</h1>
+    </header>
+    <div class="Gallery-navbar">
+        <ul>
+            <li><a href="../Artists/darshan.html">Darshan</a></li>
+            <li><a href="../Artists/jonita.html">Jonita</a></li>
+            <li><a href="../Artists/arjun.html">Arjun</a></li>
+            <li><a href="../Artists/zaeden.html">Zaeden</a></li>
+            <li><a href="../Artists/king.html">King</a></li>
+            <li><a href="../Artists/armaan.html">Armaan</a></li>
+            <li><a href="../Artists/akull.html">Akull</a></li>
+            <li><a href="../Artists/mitraz.html">Mitraz</a></li>
+            <li><a href="../Artists/kshmr.html">Kshmr</a></li>
+            <li><a href="../Artists/lisa.html">Lisa</a></li>
+            
+        </ul>
+    </div>
+    <!--Main Content Area-->
+    <main>
+        <section id="biography-container">
+            <div class="artist-name">
+                <h2>Darshan Raval</h2>
+                <h3>Genre: Indie Pop, Filmi</h3>
+            </div>
+            <img src="../Assets/Images/Darshan_Bio.jpg" alt="" class="bio-image">
+            <div class="artist-bio">
+                <p><strong>Full Name: Darshan Raval</strong> </p>
+                <p><strong>Date of Birth: 18 October 1994</strong> </p>
+                <p><strong>Place of Birth: Ahmedabad, Gujarat, India</strong> </p>
+                <p><strong>Occupation: Singer, Composer, Songwriter</strong> </p>
+            </div>
+            <div class="info">
+                <div class="artist-into">
+                    <h4>Introduction</h4>
+                    <p>
+                        Darshan Raval is a renowned Indian singer, composer, and songwriter who has made a significant mark in the Indian music industry with his soulful 
+                        voice and captivating melodies. He gained widespread recognition for his participation in reality singing competitions and has since become a household 
+                        name known for his chart-topping songs and melodious tunes.
+                    </p>
+                </div>
+                <div class="artist-life">
+                    <h4>Early Life and Education</h4>
+                    <p>
+                        Darshan Raval was born on October 18, 1994, in Ahmedabad, Gujarat, India. From a young age, he displayed a keen interest in music and began singing at local 
+                        events and competitions. He pursued his education at R.J. Tibrewal Commerce College in Ahmedabad, where he continued to nurture his passion for music alongside 
+                        his academic pursuits.
+                    </p>
+                </div>
+                <div class="artist-fame">
+                    <h4>Rise to Fame</h4>
+                    <p>
+                        Darshan Raval's journey to fame began with his participation in the reality television show "India's Raw Star" in 2014. He not only made it to the finals 
+                        but also won the show, which served as a catapult for his music career. His powerful performances and distinctive voice earned him a massive fan following, 
+                        and he soon became a sensation on social media platforms.
+                    </p>
+                </div>
+                <div class="artist-career">
+                    <h4>Musical Career</h4>
+                    <p>
+                        After winning "India's Raw Star," Darshan Raval signed with Universal Music India and released his debut single, "Tera Zikr," in 2017. The song quickly became 
+                        a massive hit and established him as a talented playback singer. His melodious voice and heartfelt lyrics resonated with audiences across India and beyond.
+                        <br><br>
+                        Some of his other popular songs include "Chogada," "Kamariya," "Baarish Lete Aana," and "Bhula Dunga." These songs have garnered millions of views on YouTube 
+                        and have consistently topped music charts. Darshan Raval's versatility as a singer is evident in his ability to effortlessly switch between different genres, 
+                        including romantic ballads, peppy dance tracks, and soulful melodies. His music often explores themes of love, heartbreak, and nostalgia, making it relatable 
+                        to a wide range of listeners.
+                    </p>
+                </div>
+                <div class="artist-achievements">
+                    <h4>Achievements</h4>
+                    <p>
+                        Throughout his career, Darshan Raval has received several accolades and awards for his contributions to the music industry. He has been nominated for various music 
+                        awards and has won numerous titles for his chart-topping songs and soulful renditions.
+                    </p>
+                </div>
+            </div>
+           
+        </section> 
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

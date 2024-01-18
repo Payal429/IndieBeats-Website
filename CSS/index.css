@@ -1,0 +1,656 @@
+/* Style for the current page link */
+#home {
+    text-decoration: double underline;
+    text-decoration-skip-ink: none; /* Prevent the underline from extending into descenders */
+    padding-bottom: 5px; /* Adjust the padding to control the space between the text and the underline */
+    font-weight: bold;
+}
+/* Welcome Styling */
+.welcome-container {
+    /* Container for welcome content */
+    text-align: center;
+    color: black;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: #b04eb2d8;
+}
+
+.welcome-container h1 {
+    /* Welcome title styling */
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.welcome-container h2 {
+    /* Welcome subtitle styling */
+    font-family: Bungee;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.welcome-container p {
+    /* Welcome paragraph styling */
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    margin: 0;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .welcome-container h1 {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .welcome-container h2 {
+        font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .welcome-container p {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .welcome-container h1 {
+        font-size: 20px; /* Further reduce font size for mobile screens */
+    }
+
+    .welcome-container h2 {
+        font-size: 18px; /* Further reduce font size for mobile screens */
+    }
+
+    .welcome-container p {
+        font-size: 14px; /* Further reduce font size for mobile screens */
+    }
+}
+/* -------------------------------------- */
+
+/* Social Banner Styling */
+.Banner-Section {
+    /* Background color for social banner section */
+    background-color: black;
+}
+
+.banner-container {
+    /* Container for social media links */
+    padding: 10px;
+    color: black;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.social-media a {
+    /* Styling for social media icons */
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 25px;
+    padding: 5px;
+}
+
+.social-media a::before {
+    /* Hover effect background */
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #5c22b3, black);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+/* Hover effect for social media icons */
+.social-media a:hover::before {
+    transform: scale(0);
+}
+
+/* Styling for individual social media icons */
+.social-media a i {
+    transition: 0.3s ease-in;
+}
+
+/* Hover effect for Facebook icon */
+.social-media a:hover #fb {
+    background: linear-gradient(#3B5998 100%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.8);
+}
+
+/* Hover effect for WhatsApp icon */
+.social-media a:hover #whatsapp {
+    background: linear-gradient(#25D366 80%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.8);
+}
+
+/* Hover effect for Instagram icon */
+.social-media a:hover #insta {
+    background: linear-gradient(45deg, #833AB4, #DF0030, #FF9900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.8);
+}
+
+/* Hover effect for YouTube icon */
+.social-media a:hover #youtube {
+    background: linear-gradient(#FF0000 90%, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.8);
+}
+
+/* Hover effect for Spotify icon */
+.social-media a:hover #spotify {
+    background: linear-gradient(45deg, #1DB954, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.8);
+}
+/* -------------------------------------- */
+
+/* Explore Section Styling */
+.Explore-Section {
+    /* Background color for explore section */
+    background-color: black;
+    padding: 20px;
+}
+
+.Explore-Section h2 {
+    /* Explore section title styling */
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: Bungee;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.explore-container {
+    /* Container for explore items */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+    padding: 15px;
+}
+
+.explore-container > div {
+    /* Styling for individual explore items */
+    background-color: black;
+    margin: 45px;
+    padding: 5px;
+    justify-content: center;
+    justify-content: space-around;
+    border: 5px solid;
+}
+
+.explore-container h3 {
+    /* Explore item title styling */
+    text-align: center;
+    margin: 0;
+    font-family: Orbitron;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.explore-container h3 a {
+    /* Styling for links within explore items */
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for explore item links */
+.explore-container #img1 h3 a:hover {
+    color: #FF3179;
+}
+
+.explore-container #img2 h3 a:hover {
+    color: #C3FD02;
+}
+
+.explore-container #img3 h3 a:hover {
+    color: #10B4BD;
+}
+
+.explore-container #img4 h3 a:hover {
+    color: #F67C00;
+}
+
+/* Styling for individual explore item borders */
+#img1 {
+    border-color: #FF3179;
+}
+
+#img2 {
+    border-color: #C3FD02;
+}
+
+#img3 {
+    border-color: #10B4BD;
+}
+
+#img4 {
+    border-color: #F67C00;
+}
+/* -------------------------------------- */
+
+/* New Releases Styling */
+.newRelease-Section {
+    padding: 20px;
+}
+
+.new-releases-container {
+    /* Container for new releases */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* Player control left side of webpage */
+.player-controls {
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+}
+
+.player-controls h3 {
+    /* Player control section title styling */
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Orbitron;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.player-controls p {
+    /* Player control section paragraph styling */
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.player-info, .progress-container, .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.player-info p {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.audio {
+    width: 100%;
+    margin: 8px 0;
+}
+
+.progress-container {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.progress {
+    width: 100%;
+    background-color: #ddd;
+    height: 10px;
+    position: relative;
+}
+
+#progress-bar {
+    background-color: #B14EB2;
+    height: 100%;
+    width: 0;
+    position: absolute;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #B14EB2;
+    color: white;
+    border-radius: 5px;
+}
+
+.duration {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .new-releases-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .player-controls {
+        max-width: 100%; /* Allow player controls to take full width */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .newRelease-Section {
+        padding: 10px;
+    }
+
+    .player-controls h3 {
+        font-size: 18px;
+    }
+
+    .player-controls p {
+        font-size: 14px;
+    }
+
+    .buttons button {
+        padding: 8px 16px;
+    }
+}
+
+/* Playlist Center of webpage */
+.playlist {
+    padding: 20px;
+    justify-content: center;
+    margin: 0;
+}
+
+.playlist h3 {
+    /* Playlist section title styling */
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 5px;
+    text-align: left;
+    list-style: none;
+    height: 200px; /* Set a fixed height for the playlist */
+    width: 550px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.playlist li {
+    /* Styling for individual playlist items */
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+/* Hover effect for playlist items */
+.playlist li:hover {
+    background-color: #B14EB2;
+    font-weight: bold;
+}
+
+.music-player-image {
+    text-align: center;
+    justify-content: center;
+}
+
+.music-player-image img {
+    text-align: center;
+    justify-content: center;
+}
+
+.music-player-image h2 {
+    /* Styling for music player title */
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    font-family: Bungee;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .features-container h2 {
+        font-size: 20px;
+    }
+    .playlist {
+        padding: 20px;
+        justify-content: center;
+        margin: auto;
+    } 
+    .player-icons h3 a {
+        font-size: 16px;
+    }
+    .playlist ul {
+        list-style: none;
+        padding: 5px;
+        text-align: left;
+        list-style: none;
+        height: 200px; /* Set a fixed height for the playlist */
+        width: 450px;
+        overflow-y: scroll; /* Enable vertical scrolling */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .features-container h2 {
+        font-size: 18px;
+    }
+
+    .player-icons h3 a {
+        font-size: 14px;
+    }
+
+    .player-icons i {
+        font-size: 40px;
+    }
+}
+/* -------------------------------------- */
+
+/* Latest Features Styling */
+.LatestFeatures-Section {
+    align-items: center;
+    margin: 10px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.features-container h2 {
+    /* Latest features section title styling */
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Bungee;
+    font-size: 24px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.player-icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.player-icons h3 a {
+    /* Styling for links in player icons section */
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+    font-family: Orbitron;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Hover effect for player icon links */
+.player-icons h3 a:hover {
+    color: #B14EB2;
+    font-weight: bold;
+}
+
+.player-icons i {
+    font-size: 60px;
+    text-align: center;
+    color: #B14EB2;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .features-container h2 {
+        font-size: 20px;
+    }
+
+    .player-icons h3 a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .features-container h2 {
+        font-size: 18px;
+    }
+
+    .player-icons h3 a {
+        font-size: 14px;
+    }
+
+    .player-icons i {
+        font-size: 40px;
+    }
+}
+
+/* -------------------------------------- */
+
+/* Community Styling */
+.community-container {
+    /* Container for community section */
+    background-color: #B14EB2;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.community-container h2 {
+    /* Community section title styling */
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family: Bungee;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.community-container button {
+    /* Styling for buttons in community section */
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #B14EB2;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+/* Hover effect for buttons in community section */
+.community-container button:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #B14EB2;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    /* Styles for tablets and smaller screens */
+    .community-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .community-container button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    .community-container h2 {
+        font-size: 24px;
+    }
+
+    .community-container button {
+        font-size: 16px;
+    }
+}
+/* -------------------------------------- */
+
+
+
+
+
+
+

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title-->
+    <title>IndieBeat</title>
+    <!--CSS Title Icon Link-->
+    <link rel="icon" type="image/x-icon" href="../Assets/Images/IndieBeatLogo-11.png">
+    <!--CSS Links-->
+    <link rel="stylesheet" href="../CSS/styles.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/index.css" type="text/css">
+    <!--External Links-->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bungee'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Orbitron' >
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar-container">
+        <!--Left side of Navigation-->
+        <div class="navbar-left">
+            <ul>
+                <li><a id="home" href="../HTML/index.html">Home</a></li>
+                <li><a id="information" href="../HTML/information.html">Information</a></li>
+                <li><a id="gallery" href="../HTML/gallery.html">Gallery</a></li>
+                <li><a id="contact" href="../HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <!--Right side of Navigation-->
+        <div class="navbar-right">
+            <ul>
+                <li><a id="Search" href="#" class="fa fa-search"></a></li>
+                <li><a id="login"href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!----------------------------------------------------------->
+    
+    <!--Header Section-->
+    <header>
+        <div class="image-logo"><img src="../Assets/Images/IndieBeat.png" alt="IndieBeat" width="100%"></div>
+    </header>
+    <!----------------------------------------------------------->
+    
+    <!--Main Content Area-->
+    <main>
+        <!--Welcome Section-->
+        <section>
+            <div class="welcome-container">
+                <h1>Welcome to IndieBeat</h1>
+                <h2>Celebrating Indian Independent Artists!</h2>
+                <p>
+                    Are you ready to dive into the vibrant world of Indian independent artists? 
+                    IndieBeat is your gateway to the rich and diverse talent that India has to offer. 
+                    We showcase the best and brightest indie artists from across the country. 
+                    Join us on this creative journey as we explore the incredible talent that's 
+                    shaping the cultural landscape of India.
+                </p>
+                <br>
+                <p>
+                    Discover New Voices: <br>Immerse yourself in the unique sounds, sights, and stories 
+                    of independent artists who are pushing boundaries and breaking stereotypes.
+                    <br><br>
+                    Stay Informed: <br>Get the latest updates on upcoming indie events, releases, 
+                    and exclusive interviews with the artists themselves.
+                </p>
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+
+        <!--Banner Section-->
+        <section class="Banner-Section">
+            <div class="banner-container">
+                <div class="social-media">
+                    <a href="#"><i id="fb" class="fab fa-facebook"></i></a>
+                    <a href="#"><i id="whatsapp" class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i id="insta" class="fab fa-instagram"></i></a>
+                    <a href="#"><i id="youtube" class="fab fa-youtube"></i></a>
+                    <a href="#"><i id="spotify" class="fab fa-spotify"></i></a>
+                </div>d
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+        
+        <!--Explore Section-->
+        <section class="Explore-Section">
+            <h2>Explore IndieBeat Music!</h2>
+            <div class="explore-container">
+                <div class="explore-option" style="order: 1" id="img1">    
+                    <img src="../Assets/Images/explore.png" alt="Discover Music" height="250px" width="250px">
+                    <h3><a href="../Subpages/discover.html">Discover Music</a></h3>
+                </div>
+                <div class="explore-option" style="order: 2" id="img2">    
+                    <img src="../Assets/Images/Indian-music-artist.png" alt="Connect with Artist" height="250px" width="250px">
+                    <h3><a href="../Subpages/artist.html">Connect with Artist</a></h3>
+                </div>
+                <div class="explore-option" style="order: 3" id="img3">    
+                    <img src="../Assets/Images/learn-music-upscaled.png" alt="Learn about Music" height="250px" width="250px">
+                    <h3><a href="../Subpages/learn.html">Learn about Music</a></h3>
+                </div>
+                <div class="explore-option" style="order: 4" id="img4">    
+                    <img src="../Assets/Images/learn-music.png" alt="Music News" height="250px" width="250px">
+                    <h3><a href="../Subpages/news.html">Music News</a></h3>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+
+        <!--New Release Section-->
+        <section class="NewRelease-Section">
+            <div class="new-releases-container">
+                <!--Music Player-->
+                <div class="player-controls">
+                    <h3>Now Playing</h3>
+                    <div class="player-info">
+                        <p id="song-info">Song Title - Artist</p>
+                    </div>
+                    <audio id="audio-player">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="progress-container">
+                        <div class="progress">
+                            <div id="progress-bar"></div><br> 
+                            <div class="duration">
+                                <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+                            </div>
+                        </div>   
+                    </div>
+                    <br>
+                    <div class="buttons">
+                        <button id="prev-btn"class="fa fa-step-backward"></button>
+                        <button id="play-pause-btn" class="fa fa-play"></button>
+                        <button id="next-btn" class="fa fa-step-forward"></button>
+                    </div>
+                </div>
+                <!----------------------------------------------------------->
+
+                <!--Playlist-->
+                <div class="playlist">
+                    <h3>Playlist</h3>
+                    <ul id="playlist">
+                        <li data-src="../Assets/Audio/Chadya - Mitraz_192(Ghantalele.com).mp3">Chadhya - Mitraz</li>
+                        <li data-src="../Assets/Audio/Sahibaa_192(Ghantalele.com).mp3">Sahibaa - Darshan Raval, Antara Mitra</li>
+                        <li data-src="../Assets/Audio/Dreams  - Zaeden.mp3">Dreams - Zaeden</li>
+                        <li data-src="../Assets/Audio/CROWN - King.mp3">Crown - King</li>
+                        <li data-src="../Assets/Audio/Kehne Ko Kya Raha - Arjun Kanungo ft Nemo   Official Audio.mp3">Kehne Ko Kya Raha - Arjun Kanungo ft Nemo</li>
+                        <li data-src="../Assets/Audio/India to Japan  - Arjun Kanungo ft Cyber Rui Shirley Setia Official Audio.mp3">India to Japan - Arjun Kanungo ft Cyber Rui Shirley Setia</li>
+                        <li data-src="../Assets/Audio/Haaye Dard - Darshan Raval.mp3">Haaye Dard - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Ho Nai Sakda - Darshan Raval.mp3">Ho Nai Sakda - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Ek Tu Hi Hai - Stebin Ben.mp3">Ek Tu Hi Hai - Stebin Ben</li>
+                        <li data-src="../Assets/Audio/Faasla - Darshan Raval.mp3">Faasla - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Hum Tumse - King.mp3">Hum Tumse - King</li>  
+                        <li data-src="../Assets/Audio/Jaane De - Darshan Raval.mp3">Jaane De - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Jannat - MITRAZ  Official Video.mp3">Jannat - Mitraz</li>
+                        <li data-src="../Assets/Audio/Lo Aayi Barsaat - Darshan Raval.mp3">Lo Aayi Barsaat - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Mahiye Jinna Sohna Unplugged - Darshan Raval.mp3">Mahiye Jinna Sohna Unplugged - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Mannat - Darshan Raval.mp3">Mannat - Darshan Raval</li>  
+                        <li data-src="../Assets/Audio/Saahiba - Darshan Raval.mp3">Saahiba - Darshan Raval</li>
+                        <li data-src="../Assets/Audio/Sanam Aa Gaya - Stebin Ben.mp3">Sanam Aa Gaya - Stebin Ben</li>
+                        <li data-src="../Assets/Audio/Sach Bata Mujhe - Arjun Kanungo.mp3">Sach Bata Mujhe - Arjun Kanungo</li>
+                    </ul>
+                </div>
+                <!----------------------------------------------------------->
+
+                <!--New Releases Image-->
+                <div class="music-player-image">
+                    <h2>New Releases</h2>
+                    <img src="../Assets/Images/music-upscaled.png" alt="Music Player Image" width="250px"height="250px" > 
+                </div>
+                <!----------------------------------------------------------->
+
+                <script src="../JavaScript/newReleases.js"></script>
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+
+        <!--Latest Feature Section-->
+        <section class="LatestFeatures-Section">
+            <div class="features-container">
+                <h2>Latest Features</h2>
+                <div class="player-icons">
+                    <span><h3><a href="../Subpages/monthlyCharts.html">Monthly Charts</a></h3></span>
+                    <span><i class='fa fa-step-backward'></i></span>
+                    <span><i class='fa fa-play'></i><h3><a href="../Subpages/spotlightArtist.html">Spotlight Artists</a></h3></span>
+                    <span><i class='fa fa-step-forward'></i></span>
+                    <span><h3><a href="../Subpages/featuredPlaylist.html">Featured Playlist</a></h3></span>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------->
+        
+        <!--Community Section-->
+        <section class="Community-Section">
+            <div class="community-container">
+                <h2>Join the Community</h2><button class="join">Join</button>
+            </div> 
+        </section>
+        <!----------------------------------------------------------->
+
+    </main>
+    <!--------------------------------------------------------------->
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/Images/IndieBeatLogo-11.png" alt="IndieBeat Music">
+            </div>
+            <!----------------------------------------------------------->
+            
+            <div class="footer-links">
+                <ul>
+                    <li><a href="../HTML/index.html">Home</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="../HTML/gallery.html">Gallery</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="../HTML/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="social-buttons">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://wa.me/'number' "><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="footer-copyright">
+                <p>&copy; 2023 IndieBeat Music. All Rights Reserved.</p>
+                <div>
+                    <p>Name and Surname: Payal.S.Morar</p>
+                    <p>Student Number: 23301266</p>
+                    <p>Content Updated in September</p>
+                </div>
+            </div>
+            <!----------------------------------------------------------->
+
+        </div>
+    </footer>
+    <!----------------------------------------------------------->
+</body>
+</html>
